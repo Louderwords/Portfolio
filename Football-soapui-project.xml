@@ -1,0 +1,2303 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:soapui-project id="e61bd6d4-3abd-46e3-a973-fd3da74dfe63" activeEnvironment="Default" name="Football" resourceRoot="" soapui-version="5.7.2" xmlns:con="http://eviware.com/soapui/config"><con:settings/><con:interface xsi:type="con:WsdlInterface" id="09dc642d-942a-42c5-9759-d35c550d33dc" wsaVersion="NONE" name="InfoSoapBinding12" type="wsdl" bindingName="{https://footballpool.dataaccess.eu}InfoSoapBinding12" soapVersion="1_2" anonymous="optional" definition="https://ws.footballpool.dataaccess.eu/info.wso?WSDL" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:settings/><con:definitionCache/><con:endpoints><con:endpoint>https://ws.footballpool.dataaccess.eu/info.wso</con:endpoint></con:endpoints><con:operation id="6d172c64-4b72-4fc0-b3be-d4fb532fdaa9" isOneWay="false" action="" name="AllCardsInfo" bindingOperationName="AllCardsInfo" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="ae455599-4568-4c05-ba57-2451adf12985" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>https://ws.footballpool.dataaccess.eu/info.wso</con:endpoint><con:request><![CDATA[<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:foot="https://footballpool.dataaccess.eu">\r
+   <soap:Header/>\r
+   <soap:Body>\r
+      <foot:AllCardsInfo/>\r
+   </soap:Body>\r
+</soap:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="https://footballpool.dataaccess.eu/InfoSoapType/AllCardsInfoRequest"/></con:call></con:operation><con:operation id="7899b198-81c1-45e0-b92a-f40c918120a9" isOneWay="false" action="" name="AllPlayerNames" bindingOperationName="AllPlayerNames" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="6755b2bf-c455-40c4-a268-3118a6e869d0" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>https://ws.footballpool.dataaccess.eu/info.wso</con:endpoint><con:request><![CDATA[<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:foot="https://footballpool.dataaccess.eu">\r
+   <soap:Header/>\r
+   <soap:Body>\r
+      <foot:AllPlayerNames>\r
+         <foot:bSelected>?</foot:bSelected>\r
+      </foot:AllPlayerNames>\r
+   </soap:Body>\r
+</soap:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="https://footballpool.dataaccess.eu/InfoSoapType/AllPlayerNamesRequest"/></con:call></con:operation><con:operation id="d9e4b47d-a187-4a74-9f81-2d5e8aad48ae" isOneWay="false" action="" name="AllPlayersWithCards" bindingOperationName="AllPlayersWithCards" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="3a40f142-e3db-4394-8f81-c925008454a0" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>https://ws.footballpool.dataaccess.eu/info.wso</con:endpoint><con:request><![CDATA[<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:foot="https://footballpool.dataaccess.eu">\r
+   <soap:Header/>\r
+   <soap:Body>\r
+      <foot:AllPlayersWithCards/>\r
+   </soap:Body>\r
+</soap:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="https://footballpool.dataaccess.eu/InfoSoapType/AllPlayersWithCardsRequest"/></con:call></con:operation><con:operation id="642397bb-4b12-4250-8ad2-8a8a0b3c13a8" isOneWay="false" action="" name="AllPlayersWithRole" bindingOperationName="AllPlayersWithRole" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="7c1b6ffa-f1b9-40e0-b4ce-e9ec2d019e22" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>https://ws.footballpool.dataaccess.eu/info.wso</con:endpoint><con:request><![CDATA[<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:foot="https://footballpool.dataaccess.eu">\r
+   <soap:Header/>\r
+   <soap:Body>\r
+      <foot:AllPlayersWithRole>\r
+         <foot:sTeamName>?</foot:sTeamName>\r
+         <foot:sRoleCode>?</foot:sRoleCode>\r
+      </foot:AllPlayersWithRole>\r
+   </soap:Body>\r
+</soap:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="https://footballpool.dataaccess.eu/InfoSoapType/AllPlayersWithRoleRequest"/></con:call></con:operation><con:operation id="7fa0b0eb-8dc7-4608-ad9c-f1989ad7400c" isOneWay="false" action="" name="AllStadiumInfo" bindingOperationName="AllStadiumInfo" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="b8a4cdc9-8088-416b-bda5-f1ae32219332" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>https://ws.footballpool.dataaccess.eu/info.wso</con:endpoint><con:request><![CDATA[<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:foot="https://footballpool.dataaccess.eu">\r
+   <soap:Header/>\r
+   <soap:Body>\r
+      <foot:AllStadiumInfo/>\r
+   </soap:Body>\r
+</soap:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="https://footballpool.dataaccess.eu/InfoSoapType/AllStadiumInfoRequest"/></con:call></con:operation><con:operation id="e7f6093f-d4e0-4707-bad8-9089b3a56676" isOneWay="false" action="" name="AllTeamCoachNames" bindingOperationName="AllTeamCoachNames" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="622ca863-a9e5-4f1d-9984-4550ae47f4d0" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>https://ws.footballpool.dataaccess.eu/info.wso</con:endpoint><con:request><![CDATA[<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:foot="https://footballpool.dataaccess.eu">\r
+   <soap:Header/>\r
+   <soap:Body>\r
+      <foot:AllTeamCoachNames/>\r
+   </soap:Body>\r
+</soap:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="https://footballpool.dataaccess.eu/InfoSoapType/AllTeamCoachNamesRequest"/></con:call></con:operation><con:operation id="305e4144-ee76-4efb-9671-6af0fc6cd72f" isOneWay="false" action="" name="Cards" bindingOperationName="Cards" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="e668aa7f-9a4f-4ef7-86bd-4b7072c9d57d" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>https://ws.footballpool.dataaccess.eu/info.wso</con:endpoint><con:request><![CDATA[<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:foot="https://footballpool.dataaccess.eu">\r
+   <soap:Header/>\r
+   <soap:Body>\r
+      <foot:Cards>\r
+         <foot:bYellow>?</foot:bYellow>\r
+         <foot:iGameNumber>?</foot:iGameNumber>\r
+      </foot:Cards>\r
+   </soap:Body>\r
+</soap:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="https://footballpool.dataaccess.eu/InfoSoapType/CardsRequest"/></con:call></con:operation><con:operation id="8229dbd1-845a-4a2c-bc61-9c4fb65bc9ee" isOneWay="false" action="" name="CityNames" bindingOperationName="CityNames" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="a6095e65-9a20-4c29-af8c-00fd4b22f156" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>https://ws.footballpool.dataaccess.eu/info.wso</con:endpoint><con:request><![CDATA[<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:foot="https://footballpool.dataaccess.eu">\r
+   <soap:Header/>\r
+   <soap:Body>\r
+      <foot:CityNames/>\r
+   </soap:Body>\r
+</soap:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="https://footballpool.dataaccess.eu/InfoSoapType/CityNamesRequest"/></con:call></con:operation><con:operation id="11600d7e-ff75-4bcd-a107-c3388b784348" isOneWay="false" action="" name="Countries" bindingOperationName="Countries" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="480472bb-1725-4b2b-a539-4eaa0c0d377c" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>https://ws.footballpool.dataaccess.eu/info.wso</con:endpoint><con:request><![CDATA[<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:foot="https://footballpool.dataaccess.eu">\r
+   <soap:Header/>\r
+   <soap:Body>\r
+      <foot:Countries>\r
+         <foot:sCountryName>?</foot:sCountryName>\r
+      </foot:Countries>\r
+   </soap:Body>\r
+</soap:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="https://footballpool.dataaccess.eu/InfoSoapType/CountriesRequest"/></con:call></con:operation><con:operation id="6fed3056-8ad9-4329-a574-0cec5c921bf1" isOneWay="false" action="" name="FirstLastGamesEachLevel" bindingOperationName="FirstLastGamesEachLevel" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="f2a9eae0-5389-43ab-ad46-52ed5044cc72" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>https://ws.footballpool.dataaccess.eu/info.wso</con:endpoint><con:request><![CDATA[<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:foot="https://footballpool.dataaccess.eu">\r
+   <soap:Header/>\r
+   <soap:Body>\r
+      <foot:FirstLastGamesEachLevel/>\r
+   </soap:Body>\r
+</soap:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="https://footballpool.dataaccess.eu/InfoSoapType/FirstLastGamesEachLevelRequest"/></con:call></con:operation><con:operation id="6cc2a4b3-a2b0-474d-b5be-1c7321c28cd6" isOneWay="false" action="" name="GameIDsGroupedByCity" bindingOperationName="GameIDsGroupedByCity" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="16cfcedc-8b6e-4fef-8324-9ad27515df8d" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>https://ws.footballpool.dataaccess.eu/info.wso</con:endpoint><con:request><![CDATA[<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:foot="https://footballpool.dataaccess.eu">\r
+   <soap:Header/>\r
+   <soap:Body>\r
+      <foot:GameIDsGroupedByCity/>\r
+   </soap:Body>\r
+</soap:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="https://footballpool.dataaccess.eu/InfoSoapType/GameIDsGroupedByCityRequest"/></con:call></con:operation><con:operation id="d2689821-29be-49de-96ec-cda5aef1c4a4" isOneWay="false" action="" name="GameScore" bindingOperationName="GameScore" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="83165243-338f-4d64-942f-12159eed3a4c" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>https://ws.footballpool.dataaccess.eu/info.wso</con:endpoint><con:request><![CDATA[<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:foot="https://footballpool.dataaccess.eu">\r
+   <soap:Header/>\r
+   <soap:Body>\r
+      <foot:GameScore>\r
+         <foot:iGameNumber>?</foot:iGameNumber>\r
+      </foot:GameScore>\r
+   </soap:Body>\r
+</soap:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="https://footballpool.dataaccess.eu/InfoSoapType/GameScoreRequest"/></con:call></con:operation><con:operation id="ee260d79-d224-473b-a71c-84b7cc9566f3" isOneWay="false" action="" name="GameTeamScore" bindingOperationName="GameTeamScore" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="fcd8987e-f24c-4692-88f4-79ebf5707146" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>https://ws.footballpool.dataaccess.eu/info.wso</con:endpoint><con:request><![CDATA[<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:foot="https://footballpool.dataaccess.eu">\r
+   <soap:Header/>\r
+   <soap:Body>\r
+      <foot:GameTeamScore>\r
+         <foot:iGameNumber>?</foot:iGameNumber>\r
+         <foot:iTeamId>?</foot:iTeamId>\r
+      </foot:GameTeamScore>\r
+   </soap:Body>\r
+</soap:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="https://footballpool.dataaccess.eu/InfoSoapType/GameTeamScoreRequest"/></con:call></con:operation><con:operation id="74b339c4-a9da-4a5b-ab5f-9e9505a73938" isOneWay="false" action="" name="GoalsScored" bindingOperationName="GoalsScored" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="7af608c8-078b-45bc-8d30-eac9c20fd7b7" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>https://ws.footballpool.dataaccess.eu/info.wso</con:endpoint><con:request><![CDATA[<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:foot="https://footballpool.dataaccess.eu">\r
+   <soap:Header/>\r
+   <soap:Body>\r
+      <foot:GoalsScored/>\r
+   </soap:Body>\r
+</soap:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="https://footballpool.dataaccess.eu/InfoSoapType/GoalsScoredRequest"/></con:call></con:operation><con:operation id="4e6bd4bf-ed8b-4a45-ac53-b8a13f8711f4" isOneWay="false" action="" name="GroupFirstGameDate" bindingOperationName="GroupFirstGameDate" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="c3e73f9d-5755-4d62-afbd-b24f966b5e93" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>https://ws.footballpool.dataaccess.eu/info.wso</con:endpoint><con:request><![CDATA[<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:foot="https://footballpool.dataaccess.eu">\r
+   <soap:Header/>\r
+   <soap:Body>\r
+      <foot:GroupFirstGameDate>\r
+         <foot:sGroupCode>?</foot:sGroupCode>\r
+      </foot:GroupFirstGameDate>\r
+   </soap:Body>\r
+</soap:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="https://footballpool.dataaccess.eu/InfoSoapType/GroupFirstGameDateRequest"/></con:call></con:operation><con:operation id="e354bcb3-b260-48cf-90bd-6c6959d5bb33" isOneWay="false" action="" name="GroupInfo" bindingOperationName="GroupInfo" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="0206cd4e-700e-4ac1-88ec-c74b24d9a67e" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>https://ws.footballpool.dataaccess.eu/info.wso</con:endpoint><con:request><![CDATA[<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:foot="https://footballpool.dataaccess.eu">\r
+   <soap:Header/>\r
+   <soap:Body>\r
+      <foot:GroupInfo/>\r
+   </soap:Body>\r
+</soap:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="https://footballpool.dataaccess.eu/InfoSoapType/GroupInfoRequest"/></con:call></con:operation><con:operation id="754f42e9-98aa-4d8f-ad73-f421beb78251" isOneWay="false" action="" name="GroupLastGameDate" bindingOperationName="GroupLastGameDate" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="4eaa0206-7e75-442e-8d0d-4907691d18a9" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>https://ws.footballpool.dataaccess.eu/info.wso</con:endpoint><con:request><![CDATA[<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:foot="https://footballpool.dataaccess.eu">\r
+   <soap:Header/>\r
+   <soap:Body>\r
+      <foot:GroupLastGameDate>\r
+         <foot:sGroupCode>?</foot:sGroupCode>\r
+      </foot:GroupLastGameDate>\r
+   </soap:Body>\r
+</soap:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="https://footballpool.dataaccess.eu/InfoSoapType/GroupLastGameDateRequest"/></con:call></con:operation><con:operation id="814b02c7-5aac-4531-afb4-4b3af9178450" isOneWay="false" action="" name="GroupStandings" bindingOperationName="GroupStandings" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="7025be1a-ea00-4d1f-812f-9f9cd86b3f6c" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>https://ws.footballpool.dataaccess.eu/info.wso</con:endpoint><con:request><![CDATA[<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:foot="https://footballpool.dataaccess.eu">\r
+   <soap:Header/>\r
+   <soap:Body>\r
+      <foot:GroupStandings>\r
+         <foot:iGroupId>?</foot:iGroupId>\r
+      </foot:GroupStandings>\r
+   </soap:Body>\r
+</soap:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="https://footballpool.dataaccess.eu/InfoSoapType/GroupStandingsRequest"/></con:call></con:operation><con:operation id="4d706e00-88f4-469a-a2a7-6d1444ef8d70" isOneWay="false" action="" name="LevelFirstGameDate" bindingOperationName="LevelFirstGameDate" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="50dbe3e2-3f7f-4fc0-a29e-c9de0563fca5" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>https://ws.footballpool.dataaccess.eu/info.wso</con:endpoint><con:request><![CDATA[<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:foot="https://footballpool.dataaccess.eu">\r
+   <soap:Header/>\r
+   <soap:Body>\r
+      <foot:LevelFirstGameDate>\r
+         <foot:iLevel>?</foot:iLevel>\r
+      </foot:LevelFirstGameDate>\r
+   </soap:Body>\r
+</soap:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="https://footballpool.dataaccess.eu/InfoSoapType/LevelFirstGameDateRequest"/></con:call></con:operation><con:operation id="ddb412b8-8b98-4bfd-9a36-4a9a1ef99103" isOneWay="false" action="" name="LevelLastGameDate" bindingOperationName="LevelLastGameDate" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="19a1caed-fdcc-4fc0-9868-4348e524c5a3" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>https://ws.footballpool.dataaccess.eu/info.wso</con:endpoint><con:request><![CDATA[<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:foot="https://footballpool.dataaccess.eu">\r
+   <soap:Header/>\r
+   <soap:Body>\r
+      <foot:LevelLastGameDate>\r
+         <foot:iLevel>?</foot:iLevel>\r
+      </foot:LevelLastGameDate>\r
+   </soap:Body>\r
+</soap:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="https://footballpool.dataaccess.eu/InfoSoapType/LevelLastGameDateRequest"/></con:call></con:operation><con:operation id="0d498ab3-5ffd-4ec1-8f50-bdb1252dbe93" isOneWay="false" action="" name="Levels" bindingOperationName="Levels" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="587864fd-457b-44d2-b797-8e1d63e1876a" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>https://ws.footballpool.dataaccess.eu/info.wso</con:endpoint><con:request><![CDATA[<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:foot="https://footballpool.dataaccess.eu">\r
+   <soap:Header/>\r
+   <soap:Body>\r
+      <foot:Levels/>\r
+   </soap:Body>\r
+</soap:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="https://footballpool.dataaccess.eu/InfoSoapType/LevelsRequest"/></con:call></con:operation><con:operation id="d480454f-c822-4266-8839-0133a35c85ce" isOneWay="false" action="" name="MatchDates" bindingOperationName="MatchDates" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="284eb5af-d82c-414b-8768-a8a890b8bcb5" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>https://ws.footballpool.dataaccess.eu/info.wso</con:endpoint><con:request><![CDATA[<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:foot="https://footballpool.dataaccess.eu">\r
+   <soap:Header/>\r
+   <soap:Body>\r
+      <foot:MatchDates/>\r
+   </soap:Body>\r
+</soap:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="https://footballpool.dataaccess.eu/InfoSoapType/MatchDatesRequest"/></con:call></con:operation><con:operation id="c6d8a63f-5597-4ea1-ac5b-222d6ff8cfe9" isOneWay="false" action="" name="NextGames" bindingOperationName="NextGames" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="4795a739-82a4-4b0a-903b-fe40ae45d023" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>https://ws.footballpool.dataaccess.eu/info.wso</con:endpoint><con:request><![CDATA[<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:foot="https://footballpool.dataaccess.eu">\r
+   <soap:Header/>\r
+   <soap:Body>\r
+      <foot:NextGames/>\r
+   </soap:Body>\r
+</soap:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="https://footballpool.dataaccess.eu/InfoSoapType/NextGamesRequest"/></con:call></con:operation><con:operation id="04d6399a-40e2-4a0b-8e08-6b5791c04ee6" isOneWay="false" action="" name="PlayerRoles" bindingOperationName="PlayerRoles" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="42d1f995-b58e-432a-8104-acf54afc4e6b" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>https://ws.footballpool.dataaccess.eu/info.wso</con:endpoint><con:request><![CDATA[<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:foot="https://footballpool.dataaccess.eu">\r
+   <soap:Header/>\r
+   <soap:Body>\r
+      <foot:PlayerRoles/>\r
+   </soap:Body>\r
+</soap:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="https://footballpool.dataaccess.eu/InfoSoapType/PlayerRolesRequest"/></con:call></con:operation><con:operation id="0f35c159-f380-437f-a668-4c1bdbff04f1" isOneWay="false" action="" name="Players" bindingOperationName="Players" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="2ab6ce44-c076-4cef-bc83-e303d0a562f9" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>https://ws.footballpool.dataaccess.eu/info.wso</con:endpoint><con:request><![CDATA[<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:foot="https://footballpool.dataaccess.eu">\r
+   <soap:Header/>\r
+   <soap:Body>\r
+      <foot:Players>\r
+         <foot:sName>?</foot:sName>\r
+      </foot:Players>\r
+   </soap:Body>\r
+</soap:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="https://footballpool.dataaccess.eu/InfoSoapType/PlayersRequest"/></con:call></con:operation><con:operation id="caaa0eda-18b1-4d55-8447-037289b88171" isOneWay="false" action="" name="PlayersWithCardsRanked" bindingOperationName="PlayersWithCardsRanked" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="71a2cf27-7add-4720-9ef0-fa4f32968959" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>https://ws.footballpool.dataaccess.eu/info.wso</con:endpoint><con:request><![CDATA[<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:foot="https://footballpool.dataaccess.eu">\r
+   <soap:Header/>\r
+   <soap:Body>\r
+      <foot:PlayersWithCardsRanked/>\r
+   </soap:Body>\r
+</soap:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="https://footballpool.dataaccess.eu/InfoSoapType/PlayersWithCardsRankedRequest"/></con:call></con:operation><con:operation id="4823ebe5-c52a-4d48-b700-5d2d8b7ec901" isOneWay="false" action="" name="PlayersWithGoalsRanked" bindingOperationName="PlayersWithGoalsRanked" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="1e4499f3-25b3-40b9-93d6-68b7f10bc427" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>https://ws.footballpool.dataaccess.eu/info.wso</con:endpoint><con:request><![CDATA[<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:foot="https://footballpool.dataaccess.eu">\r
+   <soap:Header/>\r
+   <soap:Body>\r
+      <foot:PlayersWithGoalsRanked/>\r
+   </soap:Body>\r
+</soap:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="https://footballpool.dataaccess.eu/InfoSoapType/PlayersWithGoalsRankedRequest"/></con:call></con:operation><con:operation id="7633d28c-58db-40c9-bd63-d5cb07f3c38e" isOneWay="false" action="" name="ResultsAllGames" bindingOperationName="ResultsAllGames" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="370c36b5-5a66-4d59-9efc-51de3c02d71e" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>https://ws.footballpool.dataaccess.eu/info.wso</con:endpoint><con:request><![CDATA[<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:foot="https://footballpool.dataaccess.eu">\r
+   <soap:Header/>\r
+   <soap:Body>\r
+      <foot:ResultsAllGames>\r
+         <foot:iGroupId>?</foot:iGroupId>\r
+         <foot:iLevel>?</foot:iLevel>\r
+      </foot:ResultsAllGames>\r
+   </soap:Body>\r
+</soap:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="https://footballpool.dataaccess.eu/InfoSoapType/ResultsAllGamesRequest"/></con:call></con:operation><con:operation id="a91cd3d6-d292-47c1-86d2-f742e1140951" isOneWay="false" action="" name="StadiumGoogleMapsURL" bindingOperationName="StadiumGoogleMapsURL" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="efa25468-60a6-4320-9134-99a6f8a2a0d7" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>https://ws.footballpool.dataaccess.eu/info.wso</con:endpoint><con:request><![CDATA[<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:foot="https://footballpool.dataaccess.eu">\r
+   <soap:Header/>\r
+   <soap:Body>\r
+      <foot:StadiumGoogleMapsURL>\r
+         <foot:sStadiumName>?</foot:sStadiumName>\r
+      </foot:StadiumGoogleMapsURL>\r
+   </soap:Body>\r
+</soap:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="https://footballpool.dataaccess.eu/InfoSoapType/StadiumGoogleMapsURLRequest"/></con:call></con:operation><con:operation id="43bd5b7b-e2e6-46ca-9682-6b6f986d4ede" isOneWay="false" action="" name="StadiumInfo" bindingOperationName="StadiumInfo" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="9e2a25dc-ca3d-41b6-b6a4-7d9629f269d0" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>https://ws.footballpool.dataaccess.eu/info.wso</con:endpoint><con:request><![CDATA[<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:foot="https://footballpool.dataaccess.eu">\r
+   <soap:Header/>\r
+   <soap:Body>\r
+      <foot:StadiumInfo>\r
+         <foot:sStadiumName>?</foot:sStadiumName>\r
+      </foot:StadiumInfo>\r
+   </soap:Body>\r
+</soap:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="https://footballpool.dataaccess.eu/InfoSoapType/StadiumInfoRequest"/></con:call></con:operation><con:operation id="21407f7e-ba2d-4eff-8052-f4adc1387c6c" isOneWay="false" action="" name="StadiumNames" bindingOperationName="StadiumNames" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="4d7d28da-cd11-4836-83c0-8cad9af9184d" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>https://ws.footballpool.dataaccess.eu/info.wso</con:endpoint><con:request><![CDATA[<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:foot="https://footballpool.dataaccess.eu">\r
+   <soap:Header/>\r
+   <soap:Body>\r
+      <foot:StadiumNames/>\r
+   </soap:Body>\r
+</soap:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="https://footballpool.dataaccess.eu/InfoSoapType/StadiumNamesRequest"/></con:call></con:operation><con:operation id="d6500066-79ee-4e08-91f7-38296c386230" isOneWay="false" action="" name="TeamIDsByGroup" bindingOperationName="TeamIDsByGroup" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="605b730c-bbb5-44c0-b08f-724d235acc2a" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>https://ws.footballpool.dataaccess.eu/info.wso</con:endpoint><con:request><![CDATA[<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:foot="https://footballpool.dataaccess.eu">\r
+   <soap:Header/>\r
+   <soap:Body>\r
+      <foot:TeamIDsByGroup>\r
+         <foot:sGroupCode>?</foot:sGroupCode>\r
+      </foot:TeamIDsByGroup>\r
+   </soap:Body>\r
+</soap:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="https://footballpool.dataaccess.eu/InfoSoapType/TeamIDsByGroupRequest"/></con:call></con:operation><con:operation id="3b93ab1a-c857-4b67-8d2d-7d3243dff000" isOneWay="false" action="" name="TeamNames" bindingOperationName="TeamNames" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="03bcb524-4d49-421d-b4af-c514d90cfcb3" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>https://ws.footballpool.dataaccess.eu/info.wso</con:endpoint><con:request><![CDATA[<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:foot="https://footballpool.dataaccess.eu">\r
+   <soap:Header/>\r
+   <soap:Body>\r
+      <foot:TeamNames/>\r
+   </soap:Body>\r
+</soap:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="https://footballpool.dataaccess.eu/InfoSoapType/TeamNamesRequest"/></con:call></con:operation><con:operation id="6fa45f58-6b63-4f06-9585-3810ba427420" isOneWay="false" action="" name="TeamPlayers" bindingOperationName="TeamPlayers" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="38583359-ed04-424a-b79e-3dfe7ba31725" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>https://ws.footballpool.dataaccess.eu/info.wso</con:endpoint><con:request><![CDATA[<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:foot="https://footballpool.dataaccess.eu">\r
+   <soap:Header/>\r
+   <soap:Body>\r
+      <foot:TeamPlayers>\r
+         <foot:sTeamName>?</foot:sTeamName>\r
+         <foot:bSelected>?</foot:bSelected>\r
+      </foot:TeamPlayers>\r
+   </soap:Body>\r
+</soap:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="https://footballpool.dataaccess.eu/InfoSoapType/TeamPlayersRequest"/></con:call></con:operation><con:operation id="de99e5f6-6021-4cf2-890d-79b85b8b6c9a" isOneWay="false" action="" name="Teams" bindingOperationName="Teams" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="9967c1fa-896a-4f63-a35a-19e2319ec808" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>https://ws.footballpool.dataaccess.eu/info.wso</con:endpoint><con:request><![CDATA[<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:foot="https://footballpool.dataaccess.eu">\r
+   <soap:Header/>\r
+   <soap:Body>\r
+      <foot:Teams>\r
+         <foot:sTeamName>?</foot:sTeamName>\r
+      </foot:Teams>\r
+   </soap:Body>\r
+</soap:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="https://footballpool.dataaccess.eu/InfoSoapType/TeamsRequest"/></con:call></con:operation><con:operation id="93f30d64-d2a0-4793-b0ce-9f97bdfd04c8" isOneWay="false" action="" name="TopScorersList" bindingOperationName="TopScorersList" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="49d6f027-4b90-432e-a860-1488f9a86727" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>https://ws.footballpool.dataaccess.eu/info.wso</con:endpoint><con:request><![CDATA[<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:foot="https://footballpool.dataaccess.eu">\r
+   <soap:Header/>\r
+   <soap:Body>\r
+      <foot:TopScorersList/>\r
+   </soap:Body>\r
+</soap:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="https://footballpool.dataaccess.eu/InfoSoapType/TopScorersListRequest"/></con:call></con:operation></con:interface><con:interface xsi:type="con:WsdlInterface" id="fb2742b6-476b-40d3-a9de-473669da2d7f" wsaVersion="NONE" name="InfoSoapBinding" type="wsdl" bindingName="{https://footballpool.dataaccess.eu}InfoSoapBinding" soapVersion="1_1" anonymous="optional" definition="https://ws.footballpool.dataaccess.eu/info.wso?WSDL" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:settings/><con:definitionCache type="TEXT" rootPart="https://ws.footballpool.dataaccess.eu/info.wso?WSDL"><con:part><con:url>https://ws.footballpool.dataaccess.eu/info.wso?WSDL</con:url><con:content><![CDATA[<definitions name="Info" targetNamespace="https://footballpool.dataaccess.eu" xmlns="http://schemas.xmlsoap.org/wsdl/" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:tns="https://footballpool.dataaccess.eu">
+  <types>
+    <xs:schema elementFormDefault="qualified" targetNamespace="https://footballpool.dataaccess.eu">
+      <xs:complexType name="tAllCardsInfo">
+        <xs:sequence>
+          <xs:element name="dDate" type="xs:date"/>
+          <xs:element name="iMinute" type="xs:int"/>
+          <xs:element name="sTeam1Name" type="xs:string"/>
+          <xs:element name="sTeam1Flag" type="xs:string"/>
+          <xs:element name="sTeam2Name" type="xs:string"/>
+          <xs:element name="sTeam2Flag" type="xs:string"/>
+          <xs:element name="sPlayerName" type="xs:string"/>
+          <xs:element name="iYellow" type="xs:int"/>
+          <xs:element name="iRed" type="xs:int"/>
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="tPlayerName">
+        <xs:sequence>
+          <xs:element name="iId" type="xs:int"/>
+          <xs:element name="sName" type="xs:string"/>
+          <xs:element name="sCountryName" type="xs:string"/>
+          <xs:element name="sCountryFlag" type="xs:string"/>
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="tTeamPlayerCardInfo">
+        <xs:sequence>
+          <xs:element name="iID" type="xs:int"/>
+          <xs:element name="sName" type="xs:string"/>
+          <xs:element name="iYellowCards" type="xs:int"/>
+          <xs:element name="iRedCards" type="xs:int"/>
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="tTeamPlayerName">
+        <xs:sequence>
+          <xs:element name="iID" type="xs:int"/>
+          <xs:element name="sName" type="xs:string"/>
+          <xs:element name="sTeamName" type="xs:string"/>
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="tStadiumInfo">
+        <xs:sequence>
+          <xs:element name="sName" type="xs:string"/>
+          <xs:element name="iSeatsCapacity" type="xs:int"/>
+          <xs:element name="sCityName" type="xs:string"/>
+          <xs:element name="sWikipediaURL" type="xs:string"/>
+          <xs:element name="sGoogleMapsURL" type="xs:string"/>
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="tTeamCoachName">
+        <xs:sequence>
+          <xs:element name="sTeamName" type="xs:string"/>
+          <xs:element name="sCoachName" type="xs:string"/>
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="tCountry">
+        <xs:sequence>
+          <xs:element name="iId" type="xs:int"/>
+          <xs:element name="sName" type="xs:string"/>
+          <xs:element name="sISOCode" type="xs:string"/>
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="tGameLevelInfo">
+        <xs:sequence>
+          <xs:element name="iLevel" type="xs:int"/>
+          <xs:element name="sLevelCode" type="xs:string"/>
+          <xs:element name="dFirstGame" type="xs:date"/>
+          <xs:element name="dtFirstGameTime" type="xs:dateTime"/>
+          <xs:element name="iFirstGameID" type="xs:int"/>
+          <xs:element name="dLastGame" type="xs:date"/>
+          <xs:element name="iLastGameID" type="xs:int"/>
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="tGameIDsPerCity">
+        <xs:sequence>
+          <xs:element name="sCity" type="xs:string"/>
+          <xs:element name="iGameIDs" type="tns:ArrayOfInt"/>
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="tGameResult">
+        <xs:sequence>
+          <xs:element name="iGameNumber" type="xs:int"/>
+          <xs:element name="sDescription" type="xs:string"/>
+          <xs:element name="dtLocalPlayDateTime" type="xs:string"/>
+          <xs:element name="dtUTCPlayDateTime" type="xs:string"/>
+          <xs:element name="sTeamName1" type="xs:string"/>
+          <xs:element name="sTeamName2" type="xs:string"/>
+          <xs:element name="iScoreTeam1" type="xs:int"/>
+          <xs:element name="iScoreTeam2" type="xs:int"/>
+          <xs:element name="iRedCards" type="xs:int"/>
+          <xs:element name="iYellowCards" type="xs:int"/>
+          <xs:element name="sGroupCode" type="xs:string"/>
+          <xs:element name="bFinished" type="xs:boolean"/>
+          <xs:element name="iPenaltiesWonTeam1" type="xs:int"/>
+          <xs:element name="iPenaltiesWonTeam2" type="xs:int"/>
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="tGroupInfo">
+        <xs:sequence>
+          <xs:element name="iId" type="xs:int"/>
+          <xs:element name="iLevel" type="xs:int"/>
+          <xs:element name="sCode" type="xs:string"/>
+          <xs:element name="sDescription" type="xs:string"/>
+          <xs:element name="dFirstGameDate" type="xs:date"/>
+          <xs:element name="dLastGameDate" type="xs:date"/>
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="tGroupStanding">
+        <xs:sequence>
+          <xs:element name="iTeamId" type="xs:int"/>
+          <xs:element name="sTeamName" type="xs:string"/>
+          <xs:element name="iPlayed" type="xs:int"/>
+          <xs:element name="iWon" type="xs:int"/>
+          <xs:element name="iDraw" type="xs:int"/>
+          <xs:element name="iLost" type="xs:int"/>
+          <xs:element name="iGoalsFor" type="xs:int"/>
+          <xs:element name="iGoalsAgainst" type="xs:int"/>
+          <xs:element name="iPlusMin" type="xs:int"/>
+          <xs:element name="iPoints" type="xs:int"/>
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="tNextGame">
+        <xs:sequence>
+          <xs:element name="iGameNumber" type="xs:int"/>
+          <xs:element name="sLocalDateTime" type="xs:string"/>
+          <xs:element name="sUTCDateTime" type="xs:string"/>
+          <xs:element name="sTeam1" type="xs:string"/>
+          <xs:element name="sTeam2" type="xs:string"/>
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="tPlayer">
+        <xs:sequence>
+          <xs:element name="iId" type="xs:int"/>
+          <xs:element name="sName" type="xs:string"/>
+          <xs:element name="sFullName" type="xs:string"/>
+          <xs:element name="sFirstName" type="xs:string"/>
+          <xs:element name="sLastName" type="xs:string"/>
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="tPlayerRole">
+        <xs:sequence>
+          <xs:element name="sCode" type="xs:string"/>
+          <xs:element name="sDescription" type="xs:string"/>
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="tTeamPlayerCardRankInfo">
+        <xs:sequence>
+          <xs:element name="iRank" type="xs:int"/>
+          <xs:element name="iID" type="xs:int"/>
+          <xs:element name="sName" type="xs:string"/>
+          <xs:element name="iYellowCards" type="xs:int"/>
+          <xs:element name="iRedCards" type="xs:int"/>
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="tTeamPlayerGoalsRankInfo">
+        <xs:sequence>
+          <xs:element name="iRank" type="xs:int"/>
+          <xs:element name="iID" type="xs:int"/>
+          <xs:element name="sName" type="xs:string"/>
+          <xs:element name="iGoals" type="xs:int"/>
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="tTeam">
+        <xs:sequence>
+          <xs:element name="iId" type="xs:int"/>
+          <xs:element name="sName" type="xs:string"/>
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="tTopScorerTop5">
+        <xs:sequence>
+          <xs:element name="iRank" type="xs:int"/>
+          <xs:element name="iGoals" type="xs:int"/>
+          <xs:element name="sName" type="xs:string"/>
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="ArrayOfInt">
+        <xs:sequence>
+          <xs:element name="int" type="xs:int" minOccurs="0" maxOccurs="unbounded" nillable="true"/>
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="ArrayOftAllCardsInfo">
+        <xs:sequence>
+          <xs:element name="tAllCardsInfo" type="tns:tAllCardsInfo" minOccurs="0" maxOccurs="unbounded" nillable="true"/>
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="ArrayOftPlayerName">
+        <xs:sequence>
+          <xs:element name="tPlayerName" type="tns:tPlayerName" minOccurs="0" maxOccurs="unbounded" nillable="true"/>
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="ArrayOftTeamPlayerCardInfo">
+        <xs:sequence>
+          <xs:element name="tTeamPlayerCardInfo" type="tns:tTeamPlayerCardInfo" minOccurs="0" maxOccurs="unbounded" nillable="true"/>
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="ArrayOftTeamPlayerName">
+        <xs:sequence>
+          <xs:element name="tTeamPlayerName" type="tns:tTeamPlayerName" minOccurs="0" maxOccurs="unbounded" nillable="true"/>
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="ArrayOftStadiumInfo">
+        <xs:sequence>
+          <xs:element name="tStadiumInfo" type="tns:tStadiumInfo" minOccurs="0" maxOccurs="unbounded" nillable="true"/>
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="ArrayOftTeamCoachName">
+        <xs:sequence>
+          <xs:element name="tTeamCoachName" type="tns:tTeamCoachName" minOccurs="0" maxOccurs="unbounded" nillable="true"/>
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="ArrayOfString">
+        <xs:sequence>
+          <xs:element name="string" type="xs:string" minOccurs="0" maxOccurs="unbounded" nillable="true"/>
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="ArrayOftCountry">
+        <xs:sequence>
+          <xs:element name="tCountry" type="tns:tCountry" minOccurs="0" maxOccurs="unbounded" nillable="true"/>
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="ArrayOftGameLevelInfo">
+        <xs:sequence>
+          <xs:element name="tGameLevelInfo" type="tns:tGameLevelInfo" minOccurs="0" maxOccurs="unbounded" nillable="true"/>
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="ArrayOftGameIDsPerCity">
+        <xs:sequence>
+          <xs:element name="tGameIDsPerCity" type="tns:tGameIDsPerCity" minOccurs="0" maxOccurs="unbounded" nillable="true"/>
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="ArrayOftGroupInfo">
+        <xs:sequence>
+          <xs:element name="tGroupInfo" type="tns:tGroupInfo" minOccurs="0" maxOccurs="unbounded" nillable="true"/>
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="ArrayOftGroupStanding">
+        <xs:sequence>
+          <xs:element name="tGroupStanding" type="tns:tGroupStanding" minOccurs="0" maxOccurs="unbounded" nillable="true"/>
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="ArrayOfdate">
+        <xs:sequence>
+          <xs:element name="date" type="xs:date" minOccurs="0" maxOccurs="unbounded" nillable="true"/>
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="ArrayOftNextGame">
+        <xs:sequence>
+          <xs:element name="tNextGame" type="tns:tNextGame" minOccurs="0" maxOccurs="unbounded" nillable="true"/>
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="ArrayOftPlayer">
+        <xs:sequence>
+          <xs:element name="tPlayer" type="tns:tPlayer" minOccurs="0" maxOccurs="unbounded" nillable="true"/>
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="ArrayOftPlayerRole">
+        <xs:sequence>
+          <xs:element name="tPlayerRole" type="tns:tPlayerRole" minOccurs="0" maxOccurs="unbounded" nillable="true"/>
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="ArrayOftTeamPlayerCardRankInfo">
+        <xs:sequence>
+          <xs:element name="tTeamPlayerCardRankInfo" type="tns:tTeamPlayerCardRankInfo" minOccurs="0" maxOccurs="unbounded" nillable="true"/>
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="ArrayOftTeamPlayerGoalsRankInfo">
+        <xs:sequence>
+          <xs:element name="tTeamPlayerGoalsRankInfo" type="tns:tTeamPlayerGoalsRankInfo" minOccurs="0" maxOccurs="unbounded" nillable="true"/>
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="ArrayOftGameResult">
+        <xs:sequence>
+          <xs:element name="tGameResult" type="tns:tGameResult" minOccurs="0" maxOccurs="unbounded" nillable="true"/>
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="ArrayOftTeam">
+        <xs:sequence>
+          <xs:element name="tTeam" type="tns:tTeam" minOccurs="0" maxOccurs="unbounded" nillable="true"/>
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="ArrayOftTopScorerTop5">
+        <xs:sequence>
+          <xs:element name="tTopScorerTop5" type="tns:tTopScorerTop5" minOccurs="0" maxOccurs="unbounded" nillable="true"/>
+        </xs:sequence>
+      </xs:complexType>
+      <xs:element name="AllCardsInfo">
+        <xs:complexType>
+          <xs:sequence/>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="AllCardsInfoResponse">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element name="AllCardsInfoResult" type="tns:ArrayOftAllCardsInfo"/>
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="AllPlayerNames">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element name="bSelected" type="xs:boolean"/>
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="AllPlayerNamesResponse">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element name="AllPlayerNamesResult" type="tns:ArrayOftPlayerName"/>
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="AllPlayersWithCards">
+        <xs:complexType>
+          <xs:sequence/>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="AllPlayersWithCardsResponse">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element name="AllPlayersWithCardsResult" type="tns:ArrayOftTeamPlayerCardInfo"/>
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="AllPlayersWithRole">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element name="sTeamName" type="xs:string"/>
+            <xs:element name="sRoleCode" type="xs:string"/>
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="AllPlayersWithRoleResponse">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element name="AllPlayersWithRoleResult" type="tns:ArrayOftTeamPlayerName"/>
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="AllStadiumInfo">
+        <xs:complexType>
+          <xs:sequence/>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="AllStadiumInfoResponse">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element name="AllStadiumInfoResult" type="tns:ArrayOftStadiumInfo"/>
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="AllTeamCoachNames">
+        <xs:complexType>
+          <xs:sequence/>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="AllTeamCoachNamesResponse">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element name="AllTeamCoachNamesResult" type="tns:ArrayOftTeamCoachName"/>
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="Cards">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element name="bYellow" type="xs:boolean"/>
+            <xs:element name="iGameNumber" type="xs:int"/>
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="CardsResponse">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element name="CardsResult" type="xs:int"/>
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="CityNames">
+        <xs:complexType>
+          <xs:sequence/>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="CityNamesResponse">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element name="CityNamesResult" type="tns:ArrayOfString"/>
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="Countries">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element name="sCountryName" type="xs:string"/>
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="CountriesResponse">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element name="CountriesResult" type="tns:ArrayOftCountry"/>
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="FirstLastGamesEachLevel">
+        <xs:complexType>
+          <xs:sequence/>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="FirstLastGamesEachLevelResponse">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element name="FirstLastGamesEachLevelResult" type="tns:ArrayOftGameLevelInfo"/>
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="GameIDsGroupedByCity">
+        <xs:complexType>
+          <xs:sequence/>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="GameIDsGroupedByCityResponse">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element name="GameIDsGroupedByCityResult" type="tns:ArrayOftGameIDsPerCity"/>
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="GameScore">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element name="iGameNumber" type="xs:int"/>
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="GameScoreResponse">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element name="GameScoreResult" type="tns:tGameResult"/>
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="GameTeamScore">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element name="iGameNumber" type="xs:int"/>
+            <xs:element name="iTeamId" type="xs:int"/>
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="GameTeamScoreResponse">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element name="GameTeamScoreResult" type="xs:int"/>
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="GoalsScored">
+        <xs:complexType>
+          <xs:sequence/>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="GoalsScoredResponse">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element name="GoalsScoredResult" type="xs:int"/>
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="GroupFirstGameDate">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element name="sGroupCode" type="xs:string"/>
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="GroupFirstGameDateResponse">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element name="GroupFirstGameDateResult" type="xs:date"/>
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="GroupInfo">
+        <xs:complexType>
+          <xs:sequence/>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="GroupInfoResponse">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element name="GroupInfoResult" type="tns:ArrayOftGroupInfo"/>
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="GroupLastGameDate">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element name="sGroupCode" type="xs:string"/>
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="GroupLastGameDateResponse">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element name="GroupLastGameDateResult" type="xs:date"/>
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="GroupStandings">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element name="iGroupId" type="xs:int"/>
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="GroupStandingsResponse">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element name="GroupStandingsResult" type="tns:ArrayOftGroupStanding"/>
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="LevelFirstGameDate">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element name="iLevel" type="xs:int"/>
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="LevelFirstGameDateResponse">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element name="LevelFirstGameDateResult" type="xs:date"/>
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="LevelLastGameDate">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element name="iLevel" type="xs:int"/>
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="LevelLastGameDateResponse">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element name="LevelLastGameDateResult" type="xs:date"/>
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="Levels">
+        <xs:complexType>
+          <xs:sequence/>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="LevelsResponse">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element name="LevelsResult" type="tns:ArrayOfInt"/>
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="MatchDates">
+        <xs:complexType>
+          <xs:sequence/>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="MatchDatesResponse">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element name="MatchDatesResult" type="tns:ArrayOfdate"/>
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="NextGames">
+        <xs:complexType>
+          <xs:sequence/>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="NextGamesResponse">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element name="NextGamesResult" type="tns:ArrayOftNextGame"/>
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="Players">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element name="sName" type="xs:string"/>
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="PlayersResponse">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element name="PlayersResult" type="tns:ArrayOftPlayer"/>
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="PlayerRoles">
+        <xs:complexType>
+          <xs:sequence/>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="PlayerRolesResponse">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element name="PlayerRolesResult" type="tns:ArrayOftPlayerRole"/>
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="PlayersWithCardsRanked">
+        <xs:complexType>
+          <xs:sequence/>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="PlayersWithCardsRankedResponse">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element name="PlayersWithCardsRankedResult" type="tns:ArrayOftTeamPlayerCardRankInfo"/>
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="PlayersWithGoalsRanked">
+        <xs:complexType>
+          <xs:sequence/>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="PlayersWithGoalsRankedResponse">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element name="PlayersWithGoalsRankedResult" type="tns:ArrayOftTeamPlayerGoalsRankInfo"/>
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="ResultsAllGames">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element name="iGroupId" type="xs:int"/>
+            <xs:element name="iLevel" type="xs:int"/>
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="ResultsAllGamesResponse">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element name="ResultsAllGamesResult" type="tns:ArrayOftGameResult"/>
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="StadiumGoogleMapsURL">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element name="sStadiumName" type="xs:string"/>
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="StadiumGoogleMapsURLResponse">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element name="StadiumGoogleMapsURLResult" type="xs:string"/>
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="StadiumInfo">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element name="sStadiumName" type="xs:string"/>
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="StadiumInfoResponse">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element name="StadiumInfoResult" type="tns:tStadiumInfo"/>
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="StadiumNames">
+        <xs:complexType>
+          <xs:sequence/>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="StadiumNamesResponse">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element name="StadiumNamesResult" type="tns:ArrayOfString"/>
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="TeamIDsByGroup">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element name="sGroupCode" type="xs:string"/>
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="TeamIDsByGroupResponse">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element name="TeamIDsByGroupResult" type="tns:ArrayOfInt"/>
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="TeamPlayers">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element name="sTeamName" type="xs:string"/>
+            <xs:element name="bSelected" type="xs:boolean"/>
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="TeamPlayersResponse">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element name="TeamPlayersResult" type="tns:ArrayOftPlayer"/>
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="TeamNames">
+        <xs:complexType>
+          <xs:sequence/>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="TeamNamesResponse">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element name="TeamNamesResult" type="tns:ArrayOfString"/>
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="Teams">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element name="sTeamName" type="xs:string"/>
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="TeamsResponse">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element name="TeamsResult" type="tns:ArrayOftTeam"/>
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="TopScorersList">
+        <xs:complexType>
+          <xs:sequence/>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="TopScorersListResponse">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element name="TopScorersListResult" type="tns:ArrayOftTopScorerTop5"/>
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+    </xs:schema>
+  </types>
+  <message name="AllCardsInfoSoapRequest">
+    <part name="parameters" element="tns:AllCardsInfo"/>
+  </message>
+  <message name="AllCardsInfoSoapResponse">
+    <part name="parameters" element="tns:AllCardsInfoResponse"/>
+  </message>
+  <message name="AllPlayerNamesSoapRequest">
+    <part name="parameters" element="tns:AllPlayerNames"/>
+  </message>
+  <message name="AllPlayerNamesSoapResponse">
+    <part name="parameters" element="tns:AllPlayerNamesResponse"/>
+  </message>
+  <message name="AllPlayersWithCardsSoapRequest">
+    <part name="parameters" element="tns:AllPlayersWithCards"/>
+  </message>
+  <message name="AllPlayersWithCardsSoapResponse">
+    <part name="parameters" element="tns:AllPlayersWithCardsResponse"/>
+  </message>
+  <message name="AllPlayersWithRoleSoapRequest">
+    <part name="parameters" element="tns:AllPlayersWithRole"/>
+  </message>
+  <message name="AllPlayersWithRoleSoapResponse">
+    <part name="parameters" element="tns:AllPlayersWithRoleResponse"/>
+  </message>
+  <message name="AllStadiumInfoSoapRequest">
+    <part name="parameters" element="tns:AllStadiumInfo"/>
+  </message>
+  <message name="AllStadiumInfoSoapResponse">
+    <part name="parameters" element="tns:AllStadiumInfoResponse"/>
+  </message>
+  <message name="AllTeamCoachNamesSoapRequest">
+    <part name="parameters" element="tns:AllTeamCoachNames"/>
+  </message>
+  <message name="AllTeamCoachNamesSoapResponse">
+    <part name="parameters" element="tns:AllTeamCoachNamesResponse"/>
+  </message>
+  <message name="CardsSoapRequest">
+    <part name="parameters" element="tns:Cards"/>
+  </message>
+  <message name="CardsSoapResponse">
+    <part name="parameters" element="tns:CardsResponse"/>
+  </message>
+  <message name="CityNamesSoapRequest">
+    <part name="parameters" element="tns:CityNames"/>
+  </message>
+  <message name="CityNamesSoapResponse">
+    <part name="parameters" element="tns:CityNamesResponse"/>
+  </message>
+  <message name="CountriesSoapRequest">
+    <part name="parameters" element="tns:Countries"/>
+  </message>
+  <message name="CountriesSoapResponse">
+    <part name="parameters" element="tns:CountriesResponse"/>
+  </message>
+  <message name="FirstLastGamesEachLevelSoapRequest">
+    <part name="parameters" element="tns:FirstLastGamesEachLevel"/>
+  </message>
+  <message name="FirstLastGamesEachLevelSoapResponse">
+    <part name="parameters" element="tns:FirstLastGamesEachLevelResponse"/>
+  </message>
+  <message name="GameIDsGroupedByCitySoapRequest">
+    <part name="parameters" element="tns:GameIDsGroupedByCity"/>
+  </message>
+  <message name="GameIDsGroupedByCitySoapResponse">
+    <part name="parameters" element="tns:GameIDsGroupedByCityResponse"/>
+  </message>
+  <message name="GameScoreSoapRequest">
+    <part name="parameters" element="tns:GameScore"/>
+  </message>
+  <message name="GameScoreSoapResponse">
+    <part name="parameters" element="tns:GameScoreResponse"/>
+  </message>
+  <message name="GameTeamScoreSoapRequest">
+    <part name="parameters" element="tns:GameTeamScore"/>
+  </message>
+  <message name="GameTeamScoreSoapResponse">
+    <part name="parameters" element="tns:GameTeamScoreResponse"/>
+  </message>
+  <message name="GoalsScoredSoapRequest">
+    <part name="parameters" element="tns:GoalsScored"/>
+  </message>
+  <message name="GoalsScoredSoapResponse">
+    <part name="parameters" element="tns:GoalsScoredResponse"/>
+  </message>
+  <message name="GroupFirstGameDateSoapRequest">
+    <part name="parameters" element="tns:GroupFirstGameDate"/>
+  </message>
+  <message name="GroupFirstGameDateSoapResponse">
+    <part name="parameters" element="tns:GroupFirstGameDateResponse"/>
+  </message>
+  <message name="GroupInfoSoapRequest">
+    <part name="parameters" element="tns:GroupInfo"/>
+  </message>
+  <message name="GroupInfoSoapResponse">
+    <part name="parameters" element="tns:GroupInfoResponse"/>
+  </message>
+  <message name="GroupLastGameDateSoapRequest">
+    <part name="parameters" element="tns:GroupLastGameDate"/>
+  </message>
+  <message name="GroupLastGameDateSoapResponse">
+    <part name="parameters" element="tns:GroupLastGameDateResponse"/>
+  </message>
+  <message name="GroupStandingsSoapRequest">
+    <part name="parameters" element="tns:GroupStandings"/>
+  </message>
+  <message name="GroupStandingsSoapResponse">
+    <part name="parameters" element="tns:GroupStandingsResponse"/>
+  </message>
+  <message name="LevelFirstGameDateSoapRequest">
+    <part name="parameters" element="tns:LevelFirstGameDate"/>
+  </message>
+  <message name="LevelFirstGameDateSoapResponse">
+    <part name="parameters" element="tns:LevelFirstGameDateResponse"/>
+  </message>
+  <message name="LevelLastGameDateSoapRequest">
+    <part name="parameters" element="tns:LevelLastGameDate"/>
+  </message>
+  <message name="LevelLastGameDateSoapResponse">
+    <part name="parameters" element="tns:LevelLastGameDateResponse"/>
+  </message>
+  <message name="LevelsSoapRequest">
+    <part name="parameters" element="tns:Levels"/>
+  </message>
+  <message name="LevelsSoapResponse">
+    <part name="parameters" element="tns:LevelsResponse"/>
+  </message>
+  <message name="MatchDatesSoapRequest">
+    <part name="parameters" element="tns:MatchDates"/>
+  </message>
+  <message name="MatchDatesSoapResponse">
+    <part name="parameters" element="tns:MatchDatesResponse"/>
+  </message>
+  <message name="NextGamesSoapRequest">
+    <part name="parameters" element="tns:NextGames"/>
+  </message>
+  <message name="NextGamesSoapResponse">
+    <part name="parameters" element="tns:NextGamesResponse"/>
+  </message>
+  <message name="PlayersSoapRequest">
+    <part name="parameters" element="tns:Players"/>
+  </message>
+  <message name="PlayersSoapResponse">
+    <part name="parameters" element="tns:PlayersResponse"/>
+  </message>
+  <message name="PlayerRolesSoapRequest">
+    <part name="parameters" element="tns:PlayerRoles"/>
+  </message>
+  <message name="PlayerRolesSoapResponse">
+    <part name="parameters" element="tns:PlayerRolesResponse"/>
+  </message>
+  <message name="PlayersWithCardsRankedSoapRequest">
+    <part name="parameters" element="tns:PlayersWithCardsRanked"/>
+  </message>
+  <message name="PlayersWithCardsRankedSoapResponse">
+    <part name="parameters" element="tns:PlayersWithCardsRankedResponse"/>
+  </message>
+  <message name="PlayersWithGoalsRankedSoapRequest">
+    <part name="parameters" element="tns:PlayersWithGoalsRanked"/>
+  </message>
+  <message name="PlayersWithGoalsRankedSoapResponse">
+    <part name="parameters" element="tns:PlayersWithGoalsRankedResponse"/>
+  </message>
+  <message name="ResultsAllGamesSoapRequest">
+    <part name="parameters" element="tns:ResultsAllGames"/>
+  </message>
+  <message name="ResultsAllGamesSoapResponse">
+    <part name="parameters" element="tns:ResultsAllGamesResponse"/>
+  </message>
+  <message name="StadiumGoogleMapsURLSoapRequest">
+    <part name="parameters" element="tns:StadiumGoogleMapsURL"/>
+  </message>
+  <message name="StadiumGoogleMapsURLSoapResponse">
+    <part name="parameters" element="tns:StadiumGoogleMapsURLResponse"/>
+  </message>
+  <message name="StadiumInfoSoapRequest">
+    <part name="parameters" element="tns:StadiumInfo"/>
+  </message>
+  <message name="StadiumInfoSoapResponse">
+    <part name="parameters" element="tns:StadiumInfoResponse"/>
+  </message>
+  <message name="StadiumNamesSoapRequest">
+    <part name="parameters" element="tns:StadiumNames"/>
+  </message>
+  <message name="StadiumNamesSoapResponse">
+    <part name="parameters" element="tns:StadiumNamesResponse"/>
+  </message>
+  <message name="TeamIDsByGroupSoapRequest">
+    <part name="parameters" element="tns:TeamIDsByGroup"/>
+  </message>
+  <message name="TeamIDsByGroupSoapResponse">
+    <part name="parameters" element="tns:TeamIDsByGroupResponse"/>
+  </message>
+  <message name="TeamPlayersSoapRequest">
+    <part name="parameters" element="tns:TeamPlayers"/>
+  </message>
+  <message name="TeamPlayersSoapResponse">
+    <part name="parameters" element="tns:TeamPlayersResponse"/>
+  </message>
+  <message name="TeamNamesSoapRequest">
+    <part name="parameters" element="tns:TeamNames"/>
+  </message>
+  <message name="TeamNamesSoapResponse">
+    <part name="parameters" element="tns:TeamNamesResponse"/>
+  </message>
+  <message name="TeamsSoapRequest">
+    <part name="parameters" element="tns:Teams"/>
+  </message>
+  <message name="TeamsSoapResponse">
+    <part name="parameters" element="tns:TeamsResponse"/>
+  </message>
+  <message name="TopScorersListSoapRequest">
+    <part name="parameters" element="tns:TopScorersList"/>
+  </message>
+  <message name="TopScorersListSoapResponse">
+    <part name="parameters" element="tns:TopScorersListResponse"/>
+  </message>
+  <portType name="InfoSoapType">
+    <operation name="AllCardsInfo">
+      <documentation>Returns an array with the information about the given yellow and red cards in all games. What date, minute, teams that were playing and player name</documentation>
+      <input message="tns:AllCardsInfoSoapRequest"/>
+      <output message="tns:AllCardsInfoSoapResponse"/>
+    </operation>
+    <operation name="AllPlayerNames">
+      <documentation>Returns an array with the id, name, country and flag reference of all players. Pass a 0 for all players and 1 for only the selected players.</documentation>
+      <input message="tns:AllPlayerNamesSoapRequest"/>
+      <output message="tns:AllPlayerNamesSoapResponse"/>
+    </operation>
+    <operation name="AllPlayersWithCards">
+      <documentation>Returns an array with the names of all players that have a yellow or a red card. The number of yellow and red cards is returned.</documentation>
+      <input message="tns:AllPlayersWithCardsSoapRequest"/>
+      <output message="tns:AllPlayersWithCardsSoapResponse"/>
+    </operation>
+    <operation name="AllPlayersWithRole">
+      <documentation>Returns an array with the names of all players that have the passed player role. If you pass a team name the result will be filtered on that team. For possible team names call the function TeamNames. For possible role codes call the function PlayerRoles</documentation>
+      <input message="tns:AllPlayersWithRoleSoapRequest"/>
+      <output message="tns:AllPlayersWithRoleSoapResponse"/>
+    </operation>
+    <operation name="AllStadiumInfo">
+      <documentation>Returns an array with the information stored about all stadiums. The array contains the names, the city where the stadium can be found, the seat capacity, the google maps and wikipedia URLs</documentation>
+      <input message="tns:AllStadiumInfoSoapRequest"/>
+      <output message="tns:AllStadiumInfoSoapResponse"/>
+    </operation>
+    <operation name="AllTeamCoachNames">
+      <documentation>Returns an array with the names of all the coaches and the team name he/she is coaching</documentation>
+      <input message="tns:AllTeamCoachNamesSoapRequest"/>
+      <output message="tns:AllTeamCoachNamesSoapResponse"/>
+    </operation>
+    <operation name="Cards">
+      <documentation>Returns the total number of red or yellow cards given for all games (iGameNumber &lt; 1) or a specific game. For the game numbers call the function ResultsAllGames</documentation>
+      <input message="tns:CardsSoapRequest"/>
+      <output message="tns:CardsSoapResponse"/>
+    </operation>
+    <operation name="CityNames">
+      <documentation>Returns an array with all the city names where games are played</documentation>
+      <input message="tns:CityNamesSoapRequest"/>
+      <output message="tns:CityNamesSoapResponse"/>
+    </operation>
+    <operation name="Countries">
+      <documentation>Get the top 25 countries starting with or containing the value of sName</documentation>
+      <input message="tns:CountriesSoapRequest"/>
+      <output message="tns:CountriesSoapResponse"/>
+    </operation>
+    <operation name="FirstLastGamesEachLevel">
+      <documentation>Returns an array with a play levels and per level the start and end game date and ID</documentation>
+      <input message="tns:FirstLastGamesEachLevelSoapRequest"/>
+      <output message="tns:FirstLastGamesEachLevelSoapResponse"/>
+    </operation>
+    <operation name="GameIDsGroupedByCity">
+      <documentation>Returns an array of Game IDs grouped by City Name</documentation>
+      <input message="tns:GameIDsGroupedByCitySoapRequest"/>
+      <output message="tns:GameIDsGroupedByCitySoapResponse"/>
+    </operation>
+    <operation name="GameScore">
+      <documentation>Returns the results of a given game (pass the game ID). For the game numbers call the function ResultsAllGames</documentation>
+      <input message="tns:GameScoreSoapRequest"/>
+      <output message="tns:GameScoreSoapResponse"/>
+    </operation>
+    <operation name="GameTeamScore">
+      <documentation>Returns the score for a team in a game. For the game numbers call the function ResultsAllGames. For the team ID call the function Teams</documentation>
+      <input message="tns:GameTeamScoreSoapRequest"/>
+      <output message="tns:GameTeamScoreSoapResponse"/>
+    </operation>
+    <operation name="GoalsScored">
+      <documentation>Returns the total number of goals scored</documentation>
+      <input message="tns:GoalsScoredSoapRequest"/>
+      <output message="tns:GoalsScoredSoapResponse"/>
+    </operation>
+    <operation name="GroupFirstGameDate">
+      <documentation>Returns the date of the first game in this group</documentation>
+      <input message="tns:GroupFirstGameDateSoapRequest"/>
+      <output message="tns:GroupFirstGameDateSoapResponse"/>
+    </operation>
+    <operation name="GroupInfo">
+      <documentation>Returns a list of groups (poule phase and later round of 16 etc) and the information such as name and date first and last game</documentation>
+      <input message="tns:GroupInfoSoapRequest"/>
+      <output message="tns:GroupInfoSoapResponse"/>
+    </operation>
+    <operation name="GroupLastGameDate">
+      <documentation>Returns the date of the last game in this group. For the group code call the function GroupInfo</documentation>
+      <input message="tns:GroupLastGameDateSoapRequest"/>
+      <output message="tns:GroupLastGameDateSoapResponse"/>
+    </operation>
+    <operation name="GroupStandings">
+      <documentation>Returns an the standings in each group by passing the group ID. For the group ID call the function GroupInfo</documentation>
+      <input message="tns:GroupStandingsSoapRequest"/>
+      <output message="tns:GroupStandingsSoapResponse"/>
+    </operation>
+    <operation name="LevelFirstGameDate">
+      <documentation>Returns the date of the first game in this level. For a level Number call the Levels Function.</documentation>
+      <input message="tns:LevelFirstGameDateSoapRequest"/>
+      <output message="tns:LevelFirstGameDateSoapResponse"/>
+    </operation>
+    <operation name="LevelLastGameDate">
+      <documentation>Returns the date of the last game in this level For a level number call the Levels function. For a level Number call the Levels Function.</documentation>
+      <input message="tns:LevelLastGameDateSoapRequest"/>
+      <output message="tns:LevelLastGameDateSoapResponse"/>
+    </operation>
+    <operation name="Levels">
+      <documentation>Returns a array with level numbers. The numbers can be used in functions that require or offer an option to pass a level number such as LevelFirstGameDate</documentation>
+      <input message="tns:LevelsSoapRequest"/>
+      <output message="tns:LevelsSoapResponse"/>
+    </operation>
+    <operation name="MatchDates">
+      <documentation>Returns a list with tournament dates</documentation>
+      <input message="tns:MatchDatesSoapRequest"/>
+      <output message="tns:MatchDatesSoapResponse"/>
+    </operation>
+    <operation name="NextGames">
+      <documentation>Returns an array with the next games of date that is greater than or equal to today. Only games of one day are returned.</documentation>
+      <input message="tns:NextGamesSoapRequest"/>
+      <output message="tns:NextGamesSoapResponse"/>
+    </operation>
+    <operation name="Players">
+      <documentation>Get the top 10 players where name, fullname, firstname or lastname contains the value of sName</documentation>
+      <input message="tns:PlayersSoapRequest"/>
+      <output message="tns:PlayersSoapResponse"/>
+    </operation>
+    <operation name="PlayerRoles">
+      <documentation>Returns an array with the roles a player can have (defender etc)</documentation>
+      <input message="tns:PlayerRolesSoapRequest"/>
+      <output message="tns:PlayerRolesSoapResponse"/>
+    </operation>
+    <operation name="PlayersWithCardsRanked">
+      <documentation>Returns an array with the names of all players that have a yellow or a red card. The number of yellow and red cards is returned.</documentation>
+      <input message="tns:PlayersWithCardsRankedSoapRequest"/>
+      <output message="tns:PlayersWithCardsRankedSoapResponse"/>
+    </operation>
+    <operation name="PlayersWithGoalsRanked">
+      <documentation>Returns an array with the names of all players that have scored a goal.</documentation>
+      <input message="tns:PlayersWithGoalsRankedSoapRequest"/>
+      <output message="tns:PlayersWithGoalsRankedSoapResponse"/>
+    </operation>
+    <operation name="ResultsAllGames">
+      <documentation>Returns game result of all games overall, in one group or at one level. When groupid &lt; 1 All games are processed (optionally filtered by level). A Group ID or level can be retrieved via GroupInfo.</documentation>
+      <input message="tns:ResultsAllGamesSoapRequest"/>
+      <output message="tns:ResultsAllGamesSoapResponse"/>
+    </operation>
+    <operation name="StadiumGoogleMapsURL">
+      <documentation>Returns a URL that can be used to show a small map of the stadium. For the name of the stadium call the funciton StadiumNames</documentation>
+      <input message="tns:StadiumGoogleMapsURLSoapRequest"/>
+      <output message="tns:StadiumGoogleMapsURLSoapResponse"/>
+    </operation>
+    <operation name="StadiumInfo">
+      <documentation>Returns the information stored about a particular stadium. For that pass the exact name of the stadium. For the name of the stadium call the funciton StadiumNames</documentation>
+      <input message="tns:StadiumInfoSoapRequest"/>
+      <output message="tns:StadiumInfoSoapResponse"/>
+    </operation>
+    <operation name="StadiumNames">
+      <documentation>Returns an array of stadium names where the games are played</documentation>
+      <input message="tns:StadiumNamesSoapRequest"/>
+      <output message="tns:StadiumNamesSoapResponse"/>
+    </operation>
+    <operation name="TeamIDsByGroup">
+      <documentation>Returns a list of team IDs based on passed GroupCode (e.g A or H). For the group code call the function GroupInfo</documentation>
+      <input message="tns:TeamIDsByGroupSoapRequest"/>
+      <output message="tns:TeamIDsByGroupSoapResponse"/>
+    </operation>
+    <operation name="TeamPlayers">
+      <documentation>Get the players of a team. This is the current squad. For the team name call the function TeamNames. Pass a 1 for selected players only or 0 for all registered players that belong to the team (now and in the past)</documentation>
+      <input message="tns:TeamPlayersSoapRequest"/>
+      <output message="tns:TeamPlayersSoapResponse"/>
+    </operation>
+    <operation name="TeamNames">
+      <documentation>Returns an array with team names. The names can be used in functions that require or offer an option to pass a teamname</documentation>
+      <input message="tns:TeamNamesSoapRequest"/>
+      <output message="tns:TeamNamesSoapResponse"/>
+    </operation>
+    <operation name="Teams">
+      <documentation>Get the top 10 teams starting with or containing the value of sTeamName. For the team name call the function TeamNames</documentation>
+      <input message="tns:TeamsSoapRequest"/>
+      <output message="tns:TeamsSoapResponse"/>
+    </operation>
+    <operation name="TopScorersList">
+      <documentation>Returns an array with the 5 best performing players.</documentation>
+      <input message="tns:TopScorersListSoapRequest"/>
+      <output message="tns:TopScorersListSoapResponse"/>
+    </operation>
+  </portType>
+  <binding name="InfoSoapBinding" type="tns:InfoSoapType">
+    <soap:binding style="document" transport="http://schemas.xmlsoap.org/soap/http"/>
+    <operation name="AllCardsInfo">
+      <soap:operation soapAction="" style="document"/>
+      <input>
+        <soap:body use="literal"/>
+      </input>
+      <output>
+        <soap:body use="literal"/>
+      </output>
+    </operation>
+    <operation name="AllPlayerNames">
+      <soap:operation soapAction="" style="document"/>
+      <input>
+        <soap:body use="literal"/>
+      </input>
+      <output>
+        <soap:body use="literal"/>
+      </output>
+    </operation>
+    <operation name="AllPlayersWithCards">
+      <soap:operation soapAction="" style="document"/>
+      <input>
+        <soap:body use="literal"/>
+      </input>
+      <output>
+        <soap:body use="literal"/>
+      </output>
+    </operation>
+    <operation name="AllPlayersWithRole">
+      <soap:operation soapAction="" style="document"/>
+      <input>
+        <soap:body use="literal"/>
+      </input>
+      <output>
+        <soap:body use="literal"/>
+      </output>
+    </operation>
+    <operation name="AllStadiumInfo">
+      <soap:operation soapAction="" style="document"/>
+      <input>
+        <soap:body use="literal"/>
+      </input>
+      <output>
+        <soap:body use="literal"/>
+      </output>
+    </operation>
+    <operation name="AllTeamCoachNames">
+      <soap:operation soapAction="" style="document"/>
+      <input>
+        <soap:body use="literal"/>
+      </input>
+      <output>
+        <soap:body use="literal"/>
+      </output>
+    </operation>
+    <operation name="Cards">
+      <soap:operation soapAction="" style="document"/>
+      <input>
+        <soap:body use="literal"/>
+      </input>
+      <output>
+        <soap:body use="literal"/>
+      </output>
+    </operation>
+    <operation name="CityNames">
+      <soap:operation soapAction="" style="document"/>
+      <input>
+        <soap:body use="literal"/>
+      </input>
+      <output>
+        <soap:body use="literal"/>
+      </output>
+    </operation>
+    <operation name="Countries">
+      <soap:operation soapAction="" style="document"/>
+      <input>
+        <soap:body use="literal"/>
+      </input>
+      <output>
+        <soap:body use="literal"/>
+      </output>
+    </operation>
+    <operation name="FirstLastGamesEachLevel">
+      <soap:operation soapAction="" style="document"/>
+      <input>
+        <soap:body use="literal"/>
+      </input>
+      <output>
+        <soap:body use="literal"/>
+      </output>
+    </operation>
+    <operation name="GameIDsGroupedByCity">
+      <soap:operation soapAction="" style="document"/>
+      <input>
+        <soap:body use="literal"/>
+      </input>
+      <output>
+        <soap:body use="literal"/>
+      </output>
+    </operation>
+    <operation name="GameScore">
+      <soap:operation soapAction="" style="document"/>
+      <input>
+        <soap:body use="literal"/>
+      </input>
+      <output>
+        <soap:body use="literal"/>
+      </output>
+    </operation>
+    <operation name="GameTeamScore">
+      <soap:operation soapAction="" style="document"/>
+      <input>
+        <soap:body use="literal"/>
+      </input>
+      <output>
+        <soap:body use="literal"/>
+      </output>
+    </operation>
+    <operation name="GoalsScored">
+      <soap:operation soapAction="" style="document"/>
+      <input>
+        <soap:body use="literal"/>
+      </input>
+      <output>
+        <soap:body use="literal"/>
+      </output>
+    </operation>
+    <operation name="GroupFirstGameDate">
+      <soap:operation soapAction="" style="document"/>
+      <input>
+        <soap:body use="literal"/>
+      </input>
+      <output>
+        <soap:body use="literal"/>
+      </output>
+    </operation>
+    <operation name="GroupInfo">
+      <soap:operation soapAction="" style="document"/>
+      <input>
+        <soap:body use="literal"/>
+      </input>
+      <output>
+        <soap:body use="literal"/>
+      </output>
+    </operation>
+    <operation name="GroupLastGameDate">
+      <soap:operation soapAction="" style="document"/>
+      <input>
+        <soap:body use="literal"/>
+      </input>
+      <output>
+        <soap:body use="literal"/>
+      </output>
+    </operation>
+    <operation name="GroupStandings">
+      <soap:operation soapAction="" style="document"/>
+      <input>
+        <soap:body use="literal"/>
+      </input>
+      <output>
+        <soap:body use="literal"/>
+      </output>
+    </operation>
+    <operation name="LevelFirstGameDate">
+      <soap:operation soapAction="" style="document"/>
+      <input>
+        <soap:body use="literal"/>
+      </input>
+      <output>
+        <soap:body use="literal"/>
+      </output>
+    </operation>
+    <operation name="LevelLastGameDate">
+      <soap:operation soapAction="" style="document"/>
+      <input>
+        <soap:body use="literal"/>
+      </input>
+      <output>
+        <soap:body use="literal"/>
+      </output>
+    </operation>
+    <operation name="Levels">
+      <soap:operation soapAction="" style="document"/>
+      <input>
+        <soap:body use="literal"/>
+      </input>
+      <output>
+        <soap:body use="literal"/>
+      </output>
+    </operation>
+    <operation name="MatchDates">
+      <soap:operation soapAction="" style="document"/>
+      <input>
+        <soap:body use="literal"/>
+      </input>
+      <output>
+        <soap:body use="literal"/>
+      </output>
+    </operation>
+    <operation name="NextGames">
+      <soap:operation soapAction="" style="document"/>
+      <input>
+        <soap:body use="literal"/>
+      </input>
+      <output>
+        <soap:body use="literal"/>
+      </output>
+    </operation>
+    <operation name="Players">
+      <soap:operation soapAction="" style="document"/>
+      <input>
+        <soap:body use="literal"/>
+      </input>
+      <output>
+        <soap:body use="literal"/>
+      </output>
+    </operation>
+    <operation name="PlayerRoles">
+      <soap:operation soapAction="" style="document"/>
+      <input>
+        <soap:body use="literal"/>
+      </input>
+      <output>
+        <soap:body use="literal"/>
+      </output>
+    </operation>
+    <operation name="PlayersWithCardsRanked">
+      <soap:operation soapAction="" style="document"/>
+      <input>
+        <soap:body use="literal"/>
+      </input>
+      <output>
+        <soap:body use="literal"/>
+      </output>
+    </operation>
+    <operation name="PlayersWithGoalsRanked">
+      <soap:operation soapAction="" style="document"/>
+      <input>
+        <soap:body use="literal"/>
+      </input>
+      <output>
+        <soap:body use="literal"/>
+      </output>
+    </operation>
+    <operation name="ResultsAllGames">
+      <soap:operation soapAction="" style="document"/>
+      <input>
+        <soap:body use="literal"/>
+      </input>
+      <output>
+        <soap:body use="literal"/>
+      </output>
+    </operation>
+    <operation name="StadiumGoogleMapsURL">
+      <soap:operation soapAction="" style="document"/>
+      <input>
+        <soap:body use="literal"/>
+      </input>
+      <output>
+        <soap:body use="literal"/>
+      </output>
+    </operation>
+    <operation name="StadiumInfo">
+      <soap:operation soapAction="" style="document"/>
+      <input>
+        <soap:body use="literal"/>
+      </input>
+      <output>
+        <soap:body use="literal"/>
+      </output>
+    </operation>
+    <operation name="StadiumNames">
+      <soap:operation soapAction="" style="document"/>
+      <input>
+        <soap:body use="literal"/>
+      </input>
+      <output>
+        <soap:body use="literal"/>
+      </output>
+    </operation>
+    <operation name="TeamIDsByGroup">
+      <soap:operation soapAction="" style="document"/>
+      <input>
+        <soap:body use="literal"/>
+      </input>
+      <output>
+        <soap:body use="literal"/>
+      </output>
+    </operation>
+    <operation name="TeamPlayers">
+      <soap:operation soapAction="" style="document"/>
+      <input>
+        <soap:body use="literal"/>
+      </input>
+      <output>
+        <soap:body use="literal"/>
+      </output>
+    </operation>
+    <operation name="TeamNames">
+      <soap:operation soapAction="" style="document"/>
+      <input>
+        <soap:body use="literal"/>
+      </input>
+      <output>
+        <soap:body use="literal"/>
+      </output>
+    </operation>
+    <operation name="Teams">
+      <soap:operation soapAction="" style="document"/>
+      <input>
+        <soap:body use="literal"/>
+      </input>
+      <output>
+        <soap:body use="literal"/>
+      </output>
+    </operation>
+    <operation name="TopScorersList">
+      <soap:operation soapAction="" style="document"/>
+      <input>
+        <soap:body use="literal"/>
+      </input>
+      <output>
+        <soap:body use="literal"/>
+      </output>
+    </operation>
+  </binding>
+  <binding name="InfoSoapBinding12" type="tns:InfoSoapType">
+    <soap12:binding style="document" transport="http://schemas.xmlsoap.org/soap/http"/>
+    <operation name="AllCardsInfo">
+      <soap12:operation soapAction="" style="document"/>
+      <input>
+        <soap12:body use="literal"/>
+      </input>
+      <output>
+        <soap12:body use="literal"/>
+      </output>
+    </operation>
+    <operation name="AllPlayerNames">
+      <soap12:operation soapAction="" style="document"/>
+      <input>
+        <soap12:body use="literal"/>
+      </input>
+      <output>
+        <soap12:body use="literal"/>
+      </output>
+    </operation>
+    <operation name="AllPlayersWithCards">
+      <soap12:operation soapAction="" style="document"/>
+      <input>
+        <soap12:body use="literal"/>
+      </input>
+      <output>
+        <soap12:body use="literal"/>
+      </output>
+    </operation>
+    <operation name="AllPlayersWithRole">
+      <soap12:operation soapAction="" style="document"/>
+      <input>
+        <soap12:body use="literal"/>
+      </input>
+      <output>
+        <soap12:body use="literal"/>
+      </output>
+    </operation>
+    <operation name="AllStadiumInfo">
+      <soap12:operation soapAction="" style="document"/>
+      <input>
+        <soap12:body use="literal"/>
+      </input>
+      <output>
+        <soap12:body use="literal"/>
+      </output>
+    </operation>
+    <operation name="AllTeamCoachNames">
+      <soap12:operation soapAction="" style="document"/>
+      <input>
+        <soap12:body use="literal"/>
+      </input>
+      <output>
+        <soap12:body use="literal"/>
+      </output>
+    </operation>
+    <operation name="Cards">
+      <soap12:operation soapAction="" style="document"/>
+      <input>
+        <soap12:body use="literal"/>
+      </input>
+      <output>
+        <soap12:body use="literal"/>
+      </output>
+    </operation>
+    <operation name="CityNames">
+      <soap12:operation soapAction="" style="document"/>
+      <input>
+        <soap12:body use="literal"/>
+      </input>
+      <output>
+        <soap12:body use="literal"/>
+      </output>
+    </operation>
+    <operation name="Countries">
+      <soap12:operation soapAction="" style="document"/>
+      <input>
+        <soap12:body use="literal"/>
+      </input>
+      <output>
+        <soap12:body use="literal"/>
+      </output>
+    </operation>
+    <operation name="FirstLastGamesEachLevel">
+      <soap12:operation soapAction="" style="document"/>
+      <input>
+        <soap12:body use="literal"/>
+      </input>
+      <output>
+        <soap12:body use="literal"/>
+      </output>
+    </operation>
+    <operation name="GameIDsGroupedByCity">
+      <soap12:operation soapAction="" style="document"/>
+      <input>
+        <soap12:body use="literal"/>
+      </input>
+      <output>
+        <soap12:body use="literal"/>
+      </output>
+    </operation>
+    <operation name="GameScore">
+      <soap12:operation soapAction="" style="document"/>
+      <input>
+        <soap12:body use="literal"/>
+      </input>
+      <output>
+        <soap12:body use="literal"/>
+      </output>
+    </operation>
+    <operation name="GameTeamScore">
+      <soap12:operation soapAction="" style="document"/>
+      <input>
+        <soap12:body use="literal"/>
+      </input>
+      <output>
+        <soap12:body use="literal"/>
+      </output>
+    </operation>
+    <operation name="GoalsScored">
+      <soap12:operation soapAction="" style="document"/>
+      <input>
+        <soap12:body use="literal"/>
+      </input>
+      <output>
+        <soap12:body use="literal"/>
+      </output>
+    </operation>
+    <operation name="GroupFirstGameDate">
+      <soap12:operation soapAction="" style="document"/>
+      <input>
+        <soap12:body use="literal"/>
+      </input>
+      <output>
+        <soap12:body use="literal"/>
+      </output>
+    </operation>
+    <operation name="GroupInfo">
+      <soap12:operation soapAction="" style="document"/>
+      <input>
+        <soap12:body use="literal"/>
+      </input>
+      <output>
+        <soap12:body use="literal"/>
+      </output>
+    </operation>
+    <operation name="GroupLastGameDate">
+      <soap12:operation soapAction="" style="document"/>
+      <input>
+        <soap12:body use="literal"/>
+      </input>
+      <output>
+        <soap12:body use="literal"/>
+      </output>
+    </operation>
+    <operation name="GroupStandings">
+      <soap12:operation soapAction="" style="document"/>
+      <input>
+        <soap12:body use="literal"/>
+      </input>
+      <output>
+        <soap12:body use="literal"/>
+      </output>
+    </operation>
+    <operation name="LevelFirstGameDate">
+      <soap12:operation soapAction="" style="document"/>
+      <input>
+        <soap12:body use="literal"/>
+      </input>
+      <output>
+        <soap12:body use="literal"/>
+      </output>
+    </operation>
+    <operation name="LevelLastGameDate">
+      <soap12:operation soapAction="" style="document"/>
+      <input>
+        <soap12:body use="literal"/>
+      </input>
+      <output>
+        <soap12:body use="literal"/>
+      </output>
+    </operation>
+    <operation name="Levels">
+      <soap12:operation soapAction="" style="document"/>
+      <input>
+        <soap12:body use="literal"/>
+      </input>
+      <output>
+        <soap12:body use="literal"/>
+      </output>
+    </operation>
+    <operation name="MatchDates">
+      <soap12:operation soapAction="" style="document"/>
+      <input>
+        <soap12:body use="literal"/>
+      </input>
+      <output>
+        <soap12:body use="literal"/>
+      </output>
+    </operation>
+    <operation name="NextGames">
+      <soap12:operation soapAction="" style="document"/>
+      <input>
+        <soap12:body use="literal"/>
+      </input>
+      <output>
+        <soap12:body use="literal"/>
+      </output>
+    </operation>
+    <operation name="Players">
+      <soap12:operation soapAction="" style="document"/>
+      <input>
+        <soap12:body use="literal"/>
+      </input>
+      <output>
+        <soap12:body use="literal"/>
+      </output>
+    </operation>
+    <operation name="PlayerRoles">
+      <soap12:operation soapAction="" style="document"/>
+      <input>
+        <soap12:body use="literal"/>
+      </input>
+      <output>
+        <soap12:body use="literal"/>
+      </output>
+    </operation>
+    <operation name="PlayersWithCardsRanked">
+      <soap12:operation soapAction="" style="document"/>
+      <input>
+        <soap12:body use="literal"/>
+      </input>
+      <output>
+        <soap12:body use="literal"/>
+      </output>
+    </operation>
+    <operation name="PlayersWithGoalsRanked">
+      <soap12:operation soapAction="" style="document"/>
+      <input>
+        <soap12:body use="literal"/>
+      </input>
+      <output>
+        <soap12:body use="literal"/>
+      </output>
+    </operation>
+    <operation name="ResultsAllGames">
+      <soap12:operation soapAction="" style="document"/>
+      <input>
+        <soap12:body use="literal"/>
+      </input>
+      <output>
+        <soap12:body use="literal"/>
+      </output>
+    </operation>
+    <operation name="StadiumGoogleMapsURL">
+      <soap12:operation soapAction="" style="document"/>
+      <input>
+        <soap12:body use="literal"/>
+      </input>
+      <output>
+        <soap12:body use="literal"/>
+      </output>
+    </operation>
+    <operation name="StadiumInfo">
+      <soap12:operation soapAction="" style="document"/>
+      <input>
+        <soap12:body use="literal"/>
+      </input>
+      <output>
+        <soap12:body use="literal"/>
+      </output>
+    </operation>
+    <operation name="StadiumNames">
+      <soap12:operation soapAction="" style="document"/>
+      <input>
+        <soap12:body use="literal"/>
+      </input>
+      <output>
+        <soap12:body use="literal"/>
+      </output>
+    </operation>
+    <operation name="TeamIDsByGroup">
+      <soap12:operation soapAction="" style="document"/>
+      <input>
+        <soap12:body use="literal"/>
+      </input>
+      <output>
+        <soap12:body use="literal"/>
+      </output>
+    </operation>
+    <operation name="TeamPlayers">
+      <soap12:operation soapAction="" style="document"/>
+      <input>
+        <soap12:body use="literal"/>
+      </input>
+      <output>
+        <soap12:body use="literal"/>
+      </output>
+    </operation>
+    <operation name="TeamNames">
+      <soap12:operation soapAction="" style="document"/>
+      <input>
+        <soap12:body use="literal"/>
+      </input>
+      <output>
+        <soap12:body use="literal"/>
+      </output>
+    </operation>
+    <operation name="Teams">
+      <soap12:operation soapAction="" style="document"/>
+      <input>
+        <soap12:body use="literal"/>
+      </input>
+      <output>
+        <soap12:body use="literal"/>
+      </output>
+    </operation>
+    <operation name="TopScorersList">
+      <soap12:operation soapAction="" style="document"/>
+      <input>
+        <soap12:body use="literal"/>
+      </input>
+      <output>
+        <soap12:body use="literal"/>
+      </output>
+    </operation>
+  </binding>
+  <service name="Info">
+    <documentation>DataFlex Web Service for public information from the DataFlex Football Pool</documentation>
+    <port name="InfoSoap" binding="tns:InfoSoapBinding">
+      <soap:address location="https://ws.footballpool.dataaccess.eu/info.wso"/>
+    </port>
+    <port name="InfoSoap12" binding="tns:InfoSoapBinding12">
+      <soap12:address location="https://ws.footballpool.dataaccess.eu/info.wso"/>
+    </port>
+  </service>
+</definitions>]]></con:content><con:type>http://schemas.xmlsoap.org/wsdl/</con:type></con:part></con:definitionCache><con:endpoints><con:endpoint>https://ws.footballpool.dataaccess.eu/info.wso</con:endpoint></con:endpoints><con:operation id="7fba6e38-79f1-45d3-a330-f68ea64b5de7" isOneWay="false" action="" name="AllCardsInfo" bindingOperationName="AllCardsInfo" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="d49873e0-98db-4411-8563-1feee84a6370" name="Request 1"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>https://ws.footballpool.dataaccess.eu/info.wso</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:foot="https://footballpool.dataaccess.eu">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <foot:AllCardsInfo/>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508" action="https://footballpool.dataaccess.eu/InfoSoapType/AllCardsInfoRequest"/><con:wsrmConfig version="1.2"/></con:call></con:operation><con:operation id="3cee635b-c0c4-4b8e-b2e1-0bb3a52e9060" isOneWay="false" action="" name="AllPlayerNames" bindingOperationName="AllPlayerNames" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="00fb8306-7e0e-4592-b584-c6b18b7b5f69" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>https://ws.footballpool.dataaccess.eu/info.wso</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:foot="https://footballpool.dataaccess.eu">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <foot:AllPlayerNames>\r
+         <foot:bSelected>?</foot:bSelected>\r
+      </foot:AllPlayerNames>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="https://footballpool.dataaccess.eu/InfoSoapType/AllPlayerNamesRequest"/></con:call></con:operation><con:operation id="84446a56-6f3e-4866-b00d-05ec85ef68e3" isOneWay="false" action="" name="AllPlayersWithCards" bindingOperationName="AllPlayersWithCards" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="12d0265f-a3d6-4ca8-88d2-1a5e79bf5673" name="Request 1"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>https://ws.footballpool.dataaccess.eu/info.wso</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:foot="https://footballpool.dataaccess.eu">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <foot:AllPlayersWithCards/>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508" action="https://footballpool.dataaccess.eu/InfoSoapType/AllPlayersWithCardsRequest"/><con:wsrmConfig version="1.2"/></con:call></con:operation><con:operation id="8e2ee4cf-1f9d-432c-b144-8f661048c921" isOneWay="false" action="" name="AllPlayersWithRole" bindingOperationName="AllPlayersWithRole" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="9ef88972-eb47-41d4-81f2-1f554e963aa5" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>https://ws.footballpool.dataaccess.eu/info.wso</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:foot="https://footballpool.dataaccess.eu">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <foot:AllPlayersWithRole>\r
+         <foot:sTeamName>?</foot:sTeamName>\r
+         <foot:sRoleCode>?</foot:sRoleCode>\r
+      </foot:AllPlayersWithRole>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="https://footballpool.dataaccess.eu/InfoSoapType/AllPlayersWithRoleRequest"/></con:call></con:operation><con:operation id="8788e666-d83f-425c-916a-8d20dd67fe0a" isOneWay="false" action="" name="AllStadiumInfo" bindingOperationName="AllStadiumInfo" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="ce482c6f-3ba1-413e-95d7-ef38699e176a" name="Request 1"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>https://ws.footballpool.dataaccess.eu/info.wso</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:foot="https://footballpool.dataaccess.eu">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <foot:AllStadiumInfo/>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508" action="https://footballpool.dataaccess.eu/InfoSoapType/AllStadiumInfoRequest"/><con:wsrmConfig version="1.2"/></con:call></con:operation><con:operation id="8f4f7e98-563d-43ea-9c56-9b7f66f77895" isOneWay="false" action="" name="AllTeamCoachNames" bindingOperationName="AllTeamCoachNames" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="90afccff-84c7-4c73-b3a9-e4bfe54b2415" name="Request 1"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>https://ws.footballpool.dataaccess.eu/info.wso</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:foot="https://footballpool.dataaccess.eu">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <foot:AllTeamCoachNames/>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508" action="https://footballpool.dataaccess.eu/InfoSoapType/AllTeamCoachNamesRequest"/><con:wsrmConfig version="1.2"/></con:call></con:operation><con:operation id="77326338-437e-4ea3-bc8f-37e9e3abef13" isOneWay="false" action="" name="Cards" bindingOperationName="Cards" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="eab391dc-be60-42c4-8bb8-db127b098c1c" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>https://ws.footballpool.dataaccess.eu/info.wso</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:foot="https://footballpool.dataaccess.eu">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <foot:Cards>\r
+         <foot:bYellow>?</foot:bYellow>\r
+         <foot:iGameNumber>?</foot:iGameNumber>\r
+      </foot:Cards>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="https://footballpool.dataaccess.eu/InfoSoapType/CardsRequest"/></con:call></con:operation><con:operation id="7c66f9a9-194b-4cd8-810f-6b06e67866ef" isOneWay="false" action="" name="CityNames" bindingOperationName="CityNames" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="233a9fcf-c91c-4dfe-b56a-a1d9ddec2d01" name="Request 1"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>https://ws.footballpool.dataaccess.eu/info.wso</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:foot="https://footballpool.dataaccess.eu">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <foot:CityNames/>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508" action="https://footballpool.dataaccess.eu/InfoSoapType/CityNamesRequest"/><con:wsrmConfig version="1.2"/></con:call></con:operation><con:operation id="27a7afa2-0c54-40a6-8a2f-1d749b2c6364" isOneWay="false" action="" name="Countries" bindingOperationName="Countries" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="a38989f8-1b81-448f-88a0-c915789b3e7d" name="Request 1"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>https://ws.footballpool.dataaccess.eu/info.wso</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:foot="https://footballpool.dataaccess.eu">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <foot:Countries>\r
+         <foot:sCountryName>?</foot:sCountryName>\r
+      </foot:Countries>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508" action="https://footballpool.dataaccess.eu/InfoSoapType/CountriesRequest"/><con:wsrmConfig version="1.2"/></con:call></con:operation><con:operation id="45759332-72b5-4d29-b2dd-d4db76a65984" isOneWay="false" action="" name="FirstLastGamesEachLevel" bindingOperationName="FirstLastGamesEachLevel" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="ab10197d-b773-40b5-aac0-d73711c93355" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>https://ws.footballpool.dataaccess.eu/info.wso</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:foot="https://footballpool.dataaccess.eu">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <foot:FirstLastGamesEachLevel/>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="https://footballpool.dataaccess.eu/InfoSoapType/FirstLastGamesEachLevelRequest"/></con:call></con:operation><con:operation id="1b61ab07-3804-4893-8ff8-b3319a9c9dc0" isOneWay="false" action="" name="GameIDsGroupedByCity" bindingOperationName="GameIDsGroupedByCity" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="7d5b50fb-fe7c-405d-9b7d-2bd352debc25" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>https://ws.footballpool.dataaccess.eu/info.wso</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:foot="https://footballpool.dataaccess.eu">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <foot:GameIDsGroupedByCity/>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="https://footballpool.dataaccess.eu/InfoSoapType/GameIDsGroupedByCityRequest"/></con:call></con:operation><con:operation id="ec72ca2d-0c25-429e-8a14-ff5270623b5f" isOneWay="false" action="" name="GameScore" bindingOperationName="GameScore" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="0c94a6ba-8fbf-4472-a517-603ca187f878" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>https://ws.footballpool.dataaccess.eu/info.wso</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:foot="https://footballpool.dataaccess.eu">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <foot:GameScore>\r
+         <foot:iGameNumber>?</foot:iGameNumber>\r
+      </foot:GameScore>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="https://footballpool.dataaccess.eu/InfoSoapType/GameScoreRequest"/></con:call></con:operation><con:operation id="1df58a6c-de13-479d-ac60-e6d288d4821f" isOneWay="false" action="" name="GameTeamScore" bindingOperationName="GameTeamScore" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="55c510fb-7e7b-41ed-99ed-a060588bfa4b" name="Request 1"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>https://ws.footballpool.dataaccess.eu/info.wso</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:foot="https://footballpool.dataaccess.eu">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <foot:GameTeamScore>\r
+         <foot:iGameNumber>7</foot:iGameNumber>\r
+         <foot:iTeamId>74</foot:iTeamId>\r
+      </foot:GameTeamScore>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508" action="https://footballpool.dataaccess.eu/InfoSoapType/GameTeamScoreRequest"/><con:wsrmConfig version="1.2"/></con:call></con:operation><con:operation id="30092e2a-7fe0-4b53-915f-d13f3391d150" isOneWay="false" action="" name="GoalsScored" bindingOperationName="GoalsScored" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="55f7df76-935c-4e6e-a5f2-5a95f82e6841" name="Request 1"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>https://ws.footballpool.dataaccess.eu/info.wso</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:foot="https://footballpool.dataaccess.eu">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <foot:GoalsScored/>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508" action="https://footballpool.dataaccess.eu/InfoSoapType/GoalsScoredRequest"/><con:wsrmConfig version="1.2"/></con:call></con:operation><con:operation id="d77c3116-99cd-40b5-94ec-dffefb8de764" isOneWay="false" action="" name="GroupFirstGameDate" bindingOperationName="GroupFirstGameDate" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="4f7914f2-bb43-467b-8557-c3690e171f93" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>https://ws.footballpool.dataaccess.eu/info.wso</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:foot="https://footballpool.dataaccess.eu">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <foot:GroupFirstGameDate>\r
+         <foot:sGroupCode>?</foot:sGroupCode>\r
+      </foot:GroupFirstGameDate>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="https://footballpool.dataaccess.eu/InfoSoapType/GroupFirstGameDateRequest"/></con:call></con:operation><con:operation id="5a4ccfa2-b7b3-43b9-a2d9-319d5d322895" isOneWay="false" action="" name="GroupInfo" bindingOperationName="GroupInfo" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="7c186ef3-da2a-4b97-9cb4-2c8b08c67d21" name="Request 1"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>https://ws.footballpool.dataaccess.eu/info.wso</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:foot="https://footballpool.dataaccess.eu">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <foot:GroupInfo/>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508" action="https://footballpool.dataaccess.eu/InfoSoapType/GroupInfoRequest"/><con:wsrmConfig version="1.2"/></con:call></con:operation><con:operation id="2efada8c-ca67-4088-bc03-47b983e1d077" isOneWay="false" action="" name="GroupLastGameDate" bindingOperationName="GroupLastGameDate" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="30aaa847-07ed-43b4-ae36-099ad634e997" name="Request 1"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>https://ws.footballpool.dataaccess.eu/info.wso</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:foot="https://footballpool.dataaccess.eu">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <foot:GroupLastGameDate>\r
+         <foot:sGroupCode>?</foot:sGroupCode>\r
+      </foot:GroupLastGameDate>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508" action="https://footballpool.dataaccess.eu/InfoSoapType/GroupLastGameDateRequest"/><con:wsrmConfig version="1.2"/></con:call></con:operation><con:operation id="b9804e66-1021-4cd0-a9d8-325c74f78cbf" isOneWay="false" action="" name="GroupStandings" bindingOperationName="GroupStandings" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="3ee0b520-df73-43b3-ad0a-dac085a26816" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>https://ws.footballpool.dataaccess.eu/info.wso</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:foot="https://footballpool.dataaccess.eu">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <foot:GroupStandings>\r
+         <foot:iGroupId>?</foot:iGroupId>\r
+      </foot:GroupStandings>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="https://footballpool.dataaccess.eu/InfoSoapType/GroupStandingsRequest"/></con:call></con:operation><con:operation id="82ee48b6-927f-4779-9c8b-600ddff26803" isOneWay="false" action="" name="LevelFirstGameDate" bindingOperationName="LevelFirstGameDate" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="cf92ed27-9c67-4fd5-b547-afc722df241e" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>https://ws.footballpool.dataaccess.eu/info.wso</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:foot="https://footballpool.dataaccess.eu">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <foot:LevelFirstGameDate>\r
+         <foot:iLevel>?</foot:iLevel>\r
+      </foot:LevelFirstGameDate>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="https://footballpool.dataaccess.eu/InfoSoapType/LevelFirstGameDateRequest"/></con:call></con:operation><con:operation id="fe095123-a03c-4f6f-a433-7da8a93dee8f" isOneWay="false" action="" name="LevelLastGameDate" bindingOperationName="LevelLastGameDate" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="ce7767bf-bbb0-446f-8bc9-adba3958b3d5" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>https://ws.footballpool.dataaccess.eu/info.wso</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:foot="https://footballpool.dataaccess.eu">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <foot:LevelLastGameDate>\r
+         <foot:iLevel>?</foot:iLevel>\r
+      </foot:LevelLastGameDate>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="https://footballpool.dataaccess.eu/InfoSoapType/LevelLastGameDateRequest"/></con:call></con:operation><con:operation id="26a76318-f8b1-482e-a5ea-f1df0bf488b9" isOneWay="false" action="" name="Levels" bindingOperationName="Levels" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="1b1a9825-62ce-4aa3-89cf-5e088a206e62" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>https://ws.footballpool.dataaccess.eu/info.wso</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:foot="https://footballpool.dataaccess.eu">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <foot:Levels/>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="https://footballpool.dataaccess.eu/InfoSoapType/LevelsRequest"/></con:call></con:operation><con:operation id="fe64e40c-90f6-474d-bd6a-d59865cf16f6" isOneWay="false" action="" name="MatchDates" bindingOperationName="MatchDates" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="043874e2-97b4-4bb5-a136-be745028c036" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>https://ws.footballpool.dataaccess.eu/info.wso</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:foot="https://footballpool.dataaccess.eu">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <foot:MatchDates/>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="https://footballpool.dataaccess.eu/InfoSoapType/MatchDatesRequest"/></con:call></con:operation><con:operation id="b69b8501-2f05-464a-8c34-089d53da56be" isOneWay="false" action="" name="NextGames" bindingOperationName="NextGames" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="5139033b-327e-4bf5-86d7-cdf6dc5f2353" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>https://ws.footballpool.dataaccess.eu/info.wso</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:foot="https://footballpool.dataaccess.eu">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <foot:NextGames/>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="https://footballpool.dataaccess.eu/InfoSoapType/NextGamesRequest"/></con:call></con:operation><con:operation id="da106583-ecdf-4a1f-9ccf-a2f399ddb102" isOneWay="false" action="" name="PlayerRoles" bindingOperationName="PlayerRoles" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="3281070b-8bb8-4a11-a947-c563cbb1d60f" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>https://ws.footballpool.dataaccess.eu/info.wso</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:foot="https://footballpool.dataaccess.eu">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <foot:PlayerRoles/>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="https://footballpool.dataaccess.eu/InfoSoapType/PlayerRolesRequest"/></con:call></con:operation><con:operation id="74375319-9434-4c0e-94b0-d2fa017cc915" isOneWay="false" action="" name="Players" bindingOperationName="Players" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="8c41f2b1-24c0-455c-a29d-f3ab71633723" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>https://ws.footballpool.dataaccess.eu/info.wso</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:foot="https://footballpool.dataaccess.eu">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <foot:Players>\r
+         <foot:sName>?</foot:sName>\r
+      </foot:Players>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="https://footballpool.dataaccess.eu/InfoSoapType/PlayersRequest"/></con:call></con:operation><con:operation id="ad30fe83-3662-4191-ac12-fa3db51ca68b" isOneWay="false" action="" name="PlayersWithCardsRanked" bindingOperationName="PlayersWithCardsRanked" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="06e88186-ef67-467a-b56e-fb568f79cb17" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>https://ws.footballpool.dataaccess.eu/info.wso</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:foot="https://footballpool.dataaccess.eu">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <foot:PlayersWithCardsRanked/>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="https://footballpool.dataaccess.eu/InfoSoapType/PlayersWithCardsRankedRequest"/></con:call></con:operation><con:operation id="04b951b7-e48b-471f-aa4a-ec9991fe94c9" isOneWay="false" action="" name="PlayersWithGoalsRanked" bindingOperationName="PlayersWithGoalsRanked" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="d230d614-6c5c-4e6b-9527-19afbc68fde1" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>https://ws.footballpool.dataaccess.eu/info.wso</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:foot="https://footballpool.dataaccess.eu">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <foot:PlayersWithGoalsRanked/>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="https://footballpool.dataaccess.eu/InfoSoapType/PlayersWithGoalsRankedRequest"/></con:call></con:operation><con:operation id="224ae2eb-54fa-432d-bb62-b965042b4d94" isOneWay="false" action="" name="ResultsAllGames" bindingOperationName="ResultsAllGames" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="d24ec319-8126-4d78-a0d1-14380a256aa5" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>https://ws.footballpool.dataaccess.eu/info.wso</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:foot="https://footballpool.dataaccess.eu">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <foot:ResultsAllGames>\r
+         <foot:iGroupId>?</foot:iGroupId>\r
+         <foot:iLevel>?</foot:iLevel>\r
+      </foot:ResultsAllGames>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="https://footballpool.dataaccess.eu/InfoSoapType/ResultsAllGamesRequest"/></con:call></con:operation><con:operation id="a18102c9-8e57-43ef-a3c9-811b755b8e15" isOneWay="false" action="" name="StadiumGoogleMapsURL" bindingOperationName="StadiumGoogleMapsURL" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="dd0e79f7-5714-466e-9c27-195f6361ceee" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>https://ws.footballpool.dataaccess.eu/info.wso</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:foot="https://footballpool.dataaccess.eu">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <foot:StadiumGoogleMapsURL>\r
+         <foot:sStadiumName>?</foot:sStadiumName>\r
+      </foot:StadiumGoogleMapsURL>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="https://footballpool.dataaccess.eu/InfoSoapType/StadiumGoogleMapsURLRequest"/></con:call></con:operation><con:operation id="3cdc1246-99b3-48da-b7db-2bf5a596cd4a" isOneWay="false" action="" name="StadiumInfo" bindingOperationName="StadiumInfo" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="39f0ee86-b833-4254-a277-a99288689026" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>https://ws.footballpool.dataaccess.eu/info.wso</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:foot="https://footballpool.dataaccess.eu">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <foot:StadiumInfo>\r
+         <foot:sStadiumName>?</foot:sStadiumName>\r
+      </foot:StadiumInfo>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="https://footballpool.dataaccess.eu/InfoSoapType/StadiumInfoRequest"/></con:call></con:operation><con:operation id="655318e0-85df-4d78-b637-95282c7e627b" isOneWay="false" action="" name="StadiumNames" bindingOperationName="StadiumNames" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="d5b4b111-385e-4730-94a7-739f0b39852c" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>https://ws.footballpool.dataaccess.eu/info.wso</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:foot="https://footballpool.dataaccess.eu">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <foot:StadiumNames/>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="https://footballpool.dataaccess.eu/InfoSoapType/StadiumNamesRequest"/></con:call></con:operation><con:operation id="78b0a2aa-c9f1-4f7a-a211-e6cbf8d2f9cb" isOneWay="false" action="" name="TeamIDsByGroup" bindingOperationName="TeamIDsByGroup" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="71321b33-3ea9-4609-b21c-6fdac2ec8744" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>https://ws.footballpool.dataaccess.eu/info.wso</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:foot="https://footballpool.dataaccess.eu">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <foot:TeamIDsByGroup>\r
+         <foot:sGroupCode>?</foot:sGroupCode>\r
+      </foot:TeamIDsByGroup>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="https://footballpool.dataaccess.eu/InfoSoapType/TeamIDsByGroupRequest"/></con:call></con:operation><con:operation id="8fa74514-7d1b-41ef-a232-66690f043464" isOneWay="false" action="" name="TeamNames" bindingOperationName="TeamNames" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="84a9ff90-eee6-47c7-be2f-52adf041088a" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>https://ws.footballpool.dataaccess.eu/info.wso</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:foot="https://footballpool.dataaccess.eu">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <foot:TeamNames/>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="https://footballpool.dataaccess.eu/InfoSoapType/TeamNamesRequest"/></con:call></con:operation><con:operation id="c61b6f9a-dac4-4bad-98ba-cbcc674c51f1" isOneWay="false" action="" name="TeamPlayers" bindingOperationName="TeamPlayers" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="0350ee70-9310-44b3-977c-fe02888d5059" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>https://ws.footballpool.dataaccess.eu/info.wso</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:foot="https://footballpool.dataaccess.eu">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <foot:TeamPlayers>\r
+         <foot:sTeamName>?</foot:sTeamName>\r
+         <foot:bSelected>?</foot:bSelected>\r
+      </foot:TeamPlayers>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508" action="https://footballpool.dataaccess.eu/InfoSoapType/TeamPlayersRequest"/><con:wsrmConfig version="1.2"/></con:call></con:operation><con:operation id="64bd53e8-cfb2-445b-be2c-040da000973d" isOneWay="false" action="" name="Teams" bindingOperationName="Teams" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="cf084b4e-79db-485e-90a1-94de1048d133" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>https://ws.footballpool.dataaccess.eu/info.wso</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:foot="https://footballpool.dataaccess.eu">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <foot:Teams>\r
+         <foot:sTeamName>?</foot:sTeamName>\r
+      </foot:Teams>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508" action="https://footballpool.dataaccess.eu/InfoSoapType/TeamsRequest"/><con:wsrmConfig version="1.2"/></con:call></con:operation><con:operation id="d4316a40-3aa3-4e89-9230-abffbc32b683" isOneWay="false" action="" name="TopScorersList" bindingOperationName="TopScorersList" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="a6678163-38ee-4008-adac-5e4b3b45be21" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>https://ws.footballpool.dataaccess.eu/info.wso</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:foot="https://footballpool.dataaccess.eu">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <foot:TopScorersList/>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="https://footballpool.dataaccess.eu/InfoSoapType/TopScorersListRequest"/></con:call></con:operation></con:interface><con:testSuite id="0aac705a-4e6d-4079-b11e-6de2ad149cc6" name="Zestaw 1"><con:settings/><con:runType>SEQUENTIAL</con:runType><con:testCase id="8c010eea-1f71-4091-830c-f14950f7a825" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="PlayersINFO" searchProperties="true"><con:settings/><con:testStep type="request" name="AllPlayerNames" id="fdf89e69-86a0-478d-965c-7eaab94a0d76"><con:settings/><con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:interface>InfoSoapBinding12</con:interface><con:operation>AllPlayerNames</con:operation><con:request name="AllPlayerNames" id="e015eb08-4662-4222-81e7-256cece98715"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>https://ws.footballpool.dataaccess.eu/info.wso</con:endpoint><con:request><![CDATA[<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:foot="https://footballpool.dataaccess.eu">\r
+   <soap:Header/>\r
+   <soap:Body>\r
+      <foot:AllPlayerNames>\r
+         <foot:bSelected>?</foot:bSelected>\r
+      </foot:AllPlayerNames>\r
+   </soap:Body>\r
+</soap:Envelope>]]></con:request><con:assertion type="SOAP Response" id="da7f8f55-f928-4df5-ba76-f3dbc0f75e71"/><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508"/><con:wsrmConfig version="1.2"/></con:request></con:config></con:testStep><con:testStep type="request" name="AllPlayersWithCards" id="af4dd4ca-dea9-4af6-8963-e5d898678db0"><con:settings/><con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:interface>InfoSoapBinding12</con:interface><con:operation>AllPlayersWithCards</con:operation><con:request name="AllPlayersWithCards" id="1d3ce4a9-47a5-494e-bf92-659229801ae2"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>https://ws.footballpool.dataaccess.eu/info.wso</con:endpoint><con:request><![CDATA[<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:foot="https://footballpool.dataaccess.eu">\r
+   <soap:Header/>\r
+   <soap:Body>\r
+      <foot:AllPlayersWithCards/>\r
+   </soap:Body>\r
+</soap:Envelope>]]></con:request><con:assertion type="SOAP Response" id="139b8ed6-d797-4a37-ae50-9cd7e3bcea44"/><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508"/><con:wsrmConfig version="1.2"/></con:request></con:config></con:testStep><con:properties/></con:testCase><con:testCase id="05629ffa-b72a-4382-b160-9c351784cecf" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="Stadiums" searchProperties="true"><con:settings/><con:testStep type="request" name="StadiumInfo" id="13d10b26-8742-4275-80bd-4bbdba31555c"><con:settings/><con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:interface>InfoSoapBinding12</con:interface><con:operation>StadiumInfo</con:operation><con:request name="StadiumInfo" id="94d7397f-6ee0-422b-9ef9-1a402efe8148"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>https://ws.footballpool.dataaccess.eu/info.wso</con:endpoint><con:request><![CDATA[<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:foot="https://footballpool.dataaccess.eu">\r
+   <soap:Header/>\r
+   <soap:Body>\r
+      <foot:StadiumInfo>\r
+         <foot:sStadiumName>?</foot:sStadiumName>\r
+      </foot:StadiumInfo>\r
+   </soap:Body>\r
+</soap:Envelope>]]></con:request><con:assertion type="SOAP Response" id="d9096d12-76b9-4bf4-b3ae-c899595c9ce1"/><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508"/><con:wsrmConfig version="1.2"/></con:request></con:config></con:testStep><con:properties/></con:testCase><con:properties/></con:testSuite><con:testSuite id="83fbb264-453f-467b-b461-da9aaff43779" name="Zestaw 2"><con:settings/><con:runType>SEQUENTIAL</con:runType><con:testCase id="f673ab19-e52d-472c-a957-cd2bda39c16f" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="Games_Teams" searchProperties="true"><con:settings/><con:testStep type="request" name="GroupLastGameDate" id="715098a6-adec-4987-bfcd-ff2f79eb72e4"><con:settings/><con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:interface>InfoSoapBinding12</con:interface><con:operation>GroupLastGameDate</con:operation><con:request name="GroupLastGameDate" id="5b9080e5-3da6-4bfc-8a23-6f65964e38e3"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>https://ws.footballpool.dataaccess.eu/info.wso</con:endpoint><con:request><![CDATA[<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:foot="https://footballpool.dataaccess.eu">\r
+   <soap:Header/>\r
+   <soap:Body>\r
+      <foot:GroupLastGameDate>\r
+         <foot:sGroupCode>A</foot:sGroupCode>\r
+      </foot:GroupLastGameDate>\r
+   </soap:Body>\r
+</soap:Envelope>]]></con:request><con:assertion type="SOAP Response" id="541221af-a72b-449e-a847-4eed3a1893e6"/><con:assertion type="Simple Contains" id="15b6ae45-4d40-4a5d-a442-40ad807d6df1" name="Contains"><con:configuration><token>2022-11-29</token><ignoreCase>false</ignoreCase><useRegEx>false</useRegEx></con:configuration></con:assertion><con:assertion type="Response SLA Assertion" id="573ce554-fd6a-4568-b457-36a826451bb1" name="Response SLA"><con:configuration><SLA>0,1</SLA></con:configuration></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508"/><con:wsrmConfig version="1.2"/></con:request></con:config></con:testStep><con:testStep type="request" name="GameTeamScore" id="4ed8412f-6b3c-4627-8999-a0fdfb359b8a"><con:settings/><con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:interface>InfoSoapBinding12</con:interface><con:operation>GameTeamScore</con:operation><con:request name="GameTeamScore" id="0b9b50e7-bc9e-4364-a86c-9ec4e88d8da1"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>https://ws.footballpool.dataaccess.eu/info.wso</con:endpoint><con:request><![CDATA[<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:foot="https://footballpool.dataaccess.eu">\r
+   <soap:Header/>\r
+   <soap:Body>\r
+      <foot:GameTeamScore>\r
+         <foot:iGameNumber>?</foot:iGameNumber>\r
+         <foot:iTeamId>?</foot:iTeamId>\r
+      </foot:GameTeamScore>\r
+   </soap:Body>\r
+</soap:Envelope>]]></con:request><con:assertion type="SOAP Response" id="686693a7-2d05-491c-8c86-1924f0f578aa"/><con:assertion type="Simple Contains" id="3072cc3a-67ff-4154-bd49-05b12678fa0b" name="Contains"><con:configuration><token/><ignoreCase>false</ignoreCase><useRegEx>false</useRegEx></con:configuration></con:assertion><con:assertion type="Response SLA Assertion" id="c32bc6b6-2bd4-466b-aa9d-774bcdb9bc13" name="Response SLA"><con:configuration><SLA>0,1</SLA></con:configuration></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508"/><con:wsrmConfig version="1.2"/></con:request></con:config></con:testStep><con:properties/></con:testCase><con:testCase id="d7bbe955-1727-4c37-b67e-d6f0a5a67857" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="GoalsScored" searchProperties="true"><con:settings/><con:testStep type="request" name="GoalsScoredResult" id="867d575d-dad3-406c-9b40-170656ba941a"><con:settings/><con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:interface>InfoSoapBinding12</con:interface><con:operation>GoalsScored</con:operation><con:request name="GoalsScoredResult" id="b4c25f1a-0a5d-4f53-a227-d1e531f3995e"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>https://ws.footballpool.dataaccess.eu/info.wso</con:endpoint><con:request><![CDATA[<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:foot="https://footballpool.dataaccess.eu">\r
+   <soap:Header/>\r
+   <soap:Body>\r
+      <foot:GoalsScored/>\r
+   </soap:Body>\r
+</soap:Envelope>]]></con:request><con:assertion type="SOAP Response" id="3b1e9a93-cff1-4cfb-9a6c-5b4a52ed77fb"/><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508"/><con:wsrmConfig version="1.2"/></con:request></con:config></con:testStep><con:properties/></con:testCase><con:properties/></con:testSuite><con:properties/><con:wssContainer/><con:oAuth2ProfileContainer/><con:oAuth1ProfileContainer/></con:soapui-project>
