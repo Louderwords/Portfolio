@@ -1,0 +1,124 @@
+1.select * from employees where city = 'Redmond';
+2.select product_code, product_name, category from products where category <> 'Beverages';
+3.select * from products where standard_cost > 12.000;
+4.select ship_city, ship_address, shipping_fee from orders where shipping_fee between 20.000 and 78.1223;
+5.select * from products where minimum_reorder_quantity is not null;
+6.select * from products where minimum_reorder_quantity is not null and standard_cost < 10.0000;
+7.select first_name, last_name, city from employees where city like '%nd';
+8.select first_name, last_name, city from employees where city like '%nd' and city != 'Redmond';
+9.select * from customers where job_title not like '%Manager';
+10.select * from customers where (first_name like 'J%' or last_name like '%o%') and job_title like '%Manager%';
+11.select * from products where supplier_ids in (4,6,7);
+12.select first_name, last_name, city from employees where city = 'Redmond' order by  first_name desc;
+13.select * from products order by standard_cost asc;
+14.select * from products order by standard_cost asc, list_price desc;
+15.select distinct job_title from customers;
+16.select distinct category from products order by category desc;
+17.select first_name as Imie_Pracownika, last_name as Nazwisko_Pracownika, city as Miasto from employees where city = 'Seattle';
+18.select ship_city as Miasto, ship_address as 'Adres dostawy', shipping_fee as 'Opłata za przewóz zamówienia' from orders where shipping_fee between 19.1256 and 78.1999;
+19.select count(id) from orders;
+20.select count(payment_type) from orders where payment_type = 'Credit Card';
+21.select count(*) from orders where paid_date is null;
+22.select max(shipping_fee) from orders;
+23.select min(standard_cost) from products where supplier_ids = 1;
+24.select avg(shipping_fee) from orders where shipping_fee > 0;
+25.select sum(quantity) from purchase_order_details where product_id = 43;
+26.select min(standard_cost), category from products group by category;
+27.select distinct job_title, count(job_title) from customers group by job_title;
+28.select * from products join suppliers on products.supplier_ids = suppliers.id;
+29.select product_name, company from products join suppliers on products.supplier_ids = suppliers.id order by company asc;
+30.select first_name, last_name, address, country_region from customers join orders on customers.id = orders.customer_id where paid_date is null;
+31.select  * from orders left join shippers on orders.shipper_id = shippers.id;
+32.select company, order_date, shipped_date from customers left join orders on customers.id = orders.customer_id;
+33.select invoice_date as 'data faktury', payment_date as 'data płatności' from invoices left join purchase_orders on invoices.order_id = purchase_orders.id;
+34.select order_date AS "Data Zamówienia", last_name AS "Nazwisko", job_title AS "Stanowisko", (Select count(*) from orders Right Join employees On orders.employee_id = employees.id where order_date is null ) AS "Wynik Funkcji Count" from orders Right Join employees On orders.employee_id = employees.id where order_date is null;
+35.select company as 'nazwa klienta', order_date as 'data zamówienia', shipped_date as 'data dostawy' from orders right join customers on orders.customer_id = customers.id;
+36.select invoice_date, payment_type, paid_date from orders right join invoices on orders.id = invoices.order_id;
+37.
+create table WROTEMW27TK
+(
+student_id int(10),
+student_name varchar(64),
+student_surname varchar(128),
+email varchar(255) unique,
+class_id int(10),
+primary key(student_id)
+);
+
+38.
+insert into WROTEMW27TK (student_id, student_name, student_surname, email, class_id)
+values (1, 'Adam', 'Kaczorowski', 'adam.k99@gmail.com', 1);
+
+insert into WROTEMW27TK (student_id, student_name, student_surname, email, class_id)
+values (2, 'Marek', 'Raczkowski', 'marekraczkowski@gmail.com', 1);
+
+insert into WROTEMW27TK (student_id, student_name, student_surname, email, class_id)
+values (3, 'Karolina', 'Banaszek', 'banaszekkarolina@gmail.com', 2);
+
+insert into WROTEMW27TK (student_id, student_name, student_surname, email, class_id)
+values (4, 'Marek', 'Sujka', 'sujkam01@gmail.com', 2);
+
+insert into WROTEMW27TK (student_id, student_name, student_surname, email, class_id)
+values (5, 'Monika', 'Kociołek', 'monika.kociolek01@gmail.com', 1);
+
+39.
+delete from WROTEMW27TK
+where student_name = 'Marek';
+
+43.?
+alter table WROTEMW27TK add city varchar(64);
+
+update WROTEMW27TK
+set
+city = 'Wrocław'
+where 
+student_id = 1;
+select * from WROTEMW27TK;
+
+update WROTEMW27TK 
+set
+city = 'Wrocław'
+where 
+student_id = 2;
+select * from WROTEMW27TK;
+
+update WROTEMW27TK 
+set
+city = 'Wrocław'
+where 
+student_id = 3;
+select * from WROTEMW27TK;
+
+update WROTEMW27TK 
+set
+city = 'Wrocław'
+where 
+student_id = 4;
+select * from WROTEMW27TK;
+
+update WROTEMW27TK 
+set
+city = 'Wrocław'
+where 
+student_id = 5;
+select * from WROTEMW27TK;
+
+Usuwanie userów jesloi jest wiecej o jakimś imieniu:
+DELETE FROM my_table
+WHERE name IN (
+	SELECT name FROM (
+		SELECT name
+		FROM my_table
+		GROUP BY name
+		HAVING COUNT(*) >= 2
+        ) AS tmp
+);
+
+
+Dodawanie więcej niż 1 wiersza na raz:
+INSERT INTO my_table (surname, name, email, class_id, city)
+VALUES
+    ("Test", "Test", "test@test.pl", 1, "Test"),
+    ("Test", "Test", "test1@test.pl", 1, "Test"),
+    ("Test", "Test", "test2@test.pl", 1, "Test");
+
